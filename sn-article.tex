@@ -73,22 +73,6 @@
 %%%%%=============================================================================%%%%
 
 %\jyear{2021}%
-
-%% as per the requirement new theorem styles can be included as shown below
-\theoremstyle{thmstyleone}%
-\newtheorem{theorem}{Theorem}%  meant for continuous numbers
-%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
-%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
-\newtheorem{proposition}[theorem]{Proposition}% 
-%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
-
-\theoremstyle{thmstyletwo}%
-\newtheorem{example}{Example}%
-\newtheorem{remark}{Remark}%
-
-\theoremstyle{thmstylethree}%
-\newtheorem{definition}{Definition}%
-
 \raggedbottom
 %%\unnumbered% uncomment this for unnumbered level heads
 
@@ -110,7 +94,10 @@
 %
 In each of the following subsections, we describe the annotation guidelines for the signalling questions using the instructional placards developed through consultation with RoB assessment and natural language processing experts.
 
-\textcolor{red}{include a generic description about the colours, logos, shapes and flowchart elements in the placards here...}
+Each placard is a flowchart encoding instructions to guide annotators in annotating the RoB question by question for the signalling questions in the Revised Cochrane RoB tool 2.0.
+The flowchart starts with the title informing the annotators of which question they are annotating for.
+The first diamond in the actual instructional flowchart asks the annotators to look for a specific information or part of text and if found instructs them to annotate it.
+\textcolor{red}{Include a generic description about the colours, logos, shapes and flowchart elements in the placards here...}
 %
 %
 %
@@ -124,6 +111,16 @@ For annotation instructions for this signalling question, ``Were there deviation
     \caption{Annotation instructions for the RoB 2.3 signalling question.}
     \label{fig:2_3}
 \end{figure}
+
+The first diamond in the flowchart asks the annotators to search for quantities of deviation with a thought bubble hinting to them that these deviations are not the dropout rate in the trial.
+Deviations from the intended intervention are defined as any unintentional changes that may have occurred in the intervention being studied due to the trial context. 
+For example, participants may not have complied with the study protocol, or there may have been problems with the delivery of the intervention that could have influenced the study outcomes.
+Dropouts, on the other hand, refer to participants who withdrew from the study or were lost to follow-up.
+Dropout rates can potentially introduce bias into a study if the characteristics of the participants who dropped out are different from those who completed the study.
+High dropout rates can also affect the statistical power of the study and its ability to draw valid conclusions.
+While both deviations from the intended intervention and dropout rates can potentially introduce bias into a study, they are not the same thing and should be evaluated separately when assessing the risk of bias in a study.
+The diamond element also hints to the annotators that they can find this information in the text of the Results section (either within the allocation paragraph or the recruitment paragraph.)
+
 %
 %
 %
@@ -139,7 +136,7 @@ For annotation instructions for this signalling question, ``Were there deviation
 %%===========================================================================================%%
 
 \bibliography{sn-bibliography.bib}% common bib file
-%% if required, the content of .bbl file can be included here once bbl is generated
+%% if required, the content of the .bbl file can be included here once bbl is generated
 %%\input sn-article.bbl
 
 
