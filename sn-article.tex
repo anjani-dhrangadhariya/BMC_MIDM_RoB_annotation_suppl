@@ -89,7 +89,7 @@
 
 %%%%%%%%%%%%%%%%
 %% Background %%
-\section{Annotation Guidelines}
+\section*{Annotation Guidelines}
 \label{sec:guidelines}
 %
 In each of the following subsections, we describe the annotation guidelines for the signalling questions using the instructional placards developed through consultation with RoB assessment and natural language processing experts.
@@ -104,25 +104,26 @@ If for a particular question, no information is found, we assume that the text d
 %
 %
 %
-\subsection{Signalling question: 1.1}
+\subsection*{Signalling question: 1.1}
 %
 OXO
 %
 %
 %
-\subsection{Signalling question: 1.2}
+\subsection*{Signalling question: 1.2}
 %
 OXO
 %
 %
 %
-\subsection{Signalling question: 1.3}
+\subsection*{Signalling question: 1.3}
 %
 OXO
 %
 %
 %
-\subsection{Signalling question: 2.3}
+\subsection*{Signalling question - 2.3}
+\label{subsec:2_3}
 %
 For annotation instructions for this signalling question, ``Were there deviations from the intended intervention that arose because of the trial context?'' follow the Flowchart~\ref{fig:2_3}.
 %
@@ -152,18 +153,18 @@ Ultimately, the review of deviations and trial context is subjective, but the an
 %
 %
 %
-\subsection{2.4 }
+\subsection*{Signalling question - 2.4 }
 %
 For annotation instructions for this signalling question, ``Were these deviations likely to have affected the outcome?'' follow the Flowchart~\ref{fig:2_4}.
 %
 \begin{figure}[hbt]
     \centering
     \includegraphics[width=\textwidth]{figures/2_4.jpg}
-    \caption{Annotation instructions for the RoB 2.3 signalling question.}
+    \caption{Annotation instructions for the RoB 2.4 signalling question.}
     \label{fig:2_4}
 \end{figure}
 %
-Do not annotate for this question if the answer to the previous question was ``2.3 No Good'' otherwise follow the instructions below.
+Do not annotate for this question if the answer to the previous question was ``2.3 No Good'' otherwise, follow the instructions below.
 In randomized clinical trials, deviations from the planned study protocol may occur for various reasons, such as the participant not following the intervention as intended or the trial site not adhering to the study procedures.
 These deviations are known as "protocol deviations" or "protocol violations."
 The question "Were these deviations likely to have affected the outcome?" in the revised Cochrane RoB 2.0 tool refers to whether the protocol deviations had the potential to influence the study results.
@@ -178,9 +179,61 @@ If they do, mark the annotated reason for deviation as ``2.4 Yes Bad'' and ``2.4
 %
 %
 %
+\subsection*{Signalling question - 2.5 }
+%
+For annotation instructions for this signalling question, ``Were these deviations from the intended intervention balanced between groups??'' follow the Flowchart~\ref{fig:2_5}.
+%
+\begin{figure}[hbt]
+    \centering
+    \includegraphics[width=\textwidth]{figures/2_5.jpg}
+    \caption{Annotation instructions for the RoB 2.5 signalling question.}
+    \label{fig:2_5}
+\end{figure}
+%
+In the context of a randomized controlled trial (RCT), the intended intervention refers to the intervention that was supposed to be given to the study participants according to the study protocol. However, sometimes deviations from the intended intervention may occur due to various reasons, such as participant non-compliance or study staff error.
+
+The question "Were these deviations from the intended intervention balanced between groups?" is asking whether any deviations from the intended intervention were similar in frequency and severity across the different study groups (i.e., intervention group and control group) or whether one group had a greater number or severity of deviations than the other.
+
+Balanced deviations between groups are important for maintaining the internal validity of the study. If one group had a higher number or severity of deviations from the intended intervention than the other, it could potentially introduce bias and confound the results of the study. Therefore, it is important to assess whether deviations from the intended intervention were balanced between the groups when evaluating the risk of bias in an RCT.
+
+The first diamond in the flowchart asks the annotators to search for quantities of deviation with a thought bubble hinting to them that these deviations are not the dropout rate in the trial (to understand the difference between deviations and dropout, refer to subsection~\ref{subsec:2_3}).
+If the deviations were balanced between the groups, mark the annotated deviations as ``2.5 Yes Good'' and ``2.5 No Bad'' otherwise.
+Now if you did not find any quantification of the deviations but found the text in the Discussion section saying that the deviations were not balanced, then mark such text in the discussion as ``2.5 No Bad''.
+%
+%
+%
+%
+\subsection*{Signalling question - 2.7 }
+%
+For annotation instructions for this signalling question, ``Was there potential for a substantial impact (on the result) of the failure to analyse participants in the group to which they were randomized?'' follow the Flowchart~\ref{fig:2_7}.
+%
+\begin{figure}[hbt]
+    \centering
+    \includegraphics[width=\textwidth]{figures/2_7.jpg}
+    \caption{Annotation instructions for the RoB 2.7 signalling question.}
+    \label{fig:2_7}
+\end{figure}
+
+
+The question ``Was there potential for a substantial impact (on the result) of the failure to analyze participants in the group to which they were randomized?'' in the Cochrane Risk of Bias (RoB) 2.0 tool refers to the risk of bias associated with deviations from the intended analysis plan in a randomized controlled trial (RCT).
+
+In an RCT, participants are usually randomized to receive either the intervention being tested or a control intervention. The analysis plan is typically based on the assumption that all participants will be analyzed according to the group to which they were randomized. However, there may be instances where participants are not analyzed in the group to which they were randomized, for example, if they dropped out of the study or if they switched groups. This is known as a deviation from the intended analysis plan.
+
+The question is asking whether this deviation from the intended analysis plan could have had a substantial impact on the study results. If there is a potential for a substantial impact, then there is a high risk of bias. For example, if a large proportion of participants in the intervention group dropped out of the study, but all participants in the control group were analyzed, this could lead to an overestimation of the treatment effect. Similarly, if participants switched groups, this could lead to an underestimation or overestimation of the treatment effect.
+
+Therefore, this question is important for assessing the risk of bias associated with deviations from the intended analysis plan in an RCT, and it helps to ensure that the study results are reliable and valid.
+
+
+The analysis we focus on this question is ITT or intent-to-treat analysis.
+The first diamond asks the annotators to find the number of people included in the ITT analysis vs. the number of people randomized to each of the intervention/comparator groups. 
+If this information is found, annotate it and follow the ``yes'' flow in the diagram.
+Now examine whether the percentage of participants excluded from the ITT analysis could have had a negative impact.
+We also include a hint here, and if more than 5\% of randomized participants were excluded from ITT analysis, we ask the annotators to mark the text as ``2.7 Yes Bad'' and ``2.7 No Good'' otherwise.
+%
+%
 %
 %%===========================================================================================%%
-%% If you are submitting to one of the Nature Portfolio journals, using the eJP submission   %%
+%% If you are submitting to one of the Nature Portfolio journals using the eJP submission   %%
 %% system, please include the references within the manuscript file itself. You may do this  %%
 %% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
 %% file, and delete the associated \verb+\bibliography+ commands.                            %%
