@@ -150,14 +150,15 @@ Follow the Flowchart~\ref{fig:2_3} for annotation instructions of the signalling
 
 
 The first diamond in the flowchart asks the annotators to search for quantities of deviation with a thought bubble hinting to them that these deviations are not the dropout rate in the trial.
-
 The diamond element also hints to the annotators that they can find this information in the text of the Results section, either within the allocation paragraph or the recruitment paragraph (green-coded arrow).
 If the information was not found within the Results section, look for it in the flowchart (either the flowcharts themselves or their captions).
-If no percentage or deviation or the number of deviations were identified in the text, do not annotate anything, and this document will be automatically marked as a ``No information'' for this signalling question.
+If no percentage deviation or the absolute number of deviations were identified in the text, do not annotate anything, and this document will be automatically marked as a ``no information'' for this signalling question following the arrow of ``no''.
 If the percentage of deviation was identified, then annotate the full sentence where this information is found.
 Next, go to the next diamond following the ``yes'' flow and judge whether these deviations were due to the trial context.
-If the deviations arose due to trial context, mark the annotated text as ``2.3 Yes Bad'' and ``2.3 No Good'' otherwise.
-Now this part is quite subjective, but at least we have the annotated information about the percentage/number of deviations which could be used to train the ML models.
+If these deviations arose due to trial context, mark the annotated sentence(s) as ``2.3 Yes Bad'' and ``2.3 No Good'' otherwise.
+Additionally, if you identify the reason for your choice of ``no good'' and ''yes bad'' mark the sentences denoting the reason for your choice.
+In conclusion, you need to make a second annotation in this case if you have sentences to support your reason.
+Now the second diamond is quite subjective and you might not find the information, but at least you will have the annotated information about the percentage/number of deviations which could be used to train the machine learning models.
 We let the reviewers be a judge of the trial context once they discover the deviation information.
 Ultimately, the review of deviations and trial context is subjective, but the annotated information can be used to train machine learning models.
 %
