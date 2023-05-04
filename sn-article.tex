@@ -89,8 +89,8 @@
 
 %%%%%%%%%%%%%%%%
 %% Background %%
-\section*{Annotation Guidelines}
-\label{sec:guidelines}
+\section*{Annotation Guidelines for RoB domain 1}
+\label{sec:dom1}
 %
 In each of the following subsections, we describe the annotation guidelines for the signalling questions using the instructional placards developed through consultation with RoB assessment and natural language processing experts.
 
@@ -122,10 +122,23 @@ OXO
 %
 %
 %
+\section*{Annotation Guidelines for RoB domain 2}
+\label{sec:dom2}
+%
+Before detailing annotation instructions for this domain, we clarify the difference between deviations from intended interventions and dropouts from the trial.
+Deviation from intended interventions are any unintentional changes that could have occurred in the intervention under investigation in the trial.
+For example, participants may not have complied with the study protocol, or there might have been problems with the delivery of the intervention that could have influenced the study outcomes.
+In contrast, dropouts refer to participants who withdrew from the study or were lost to follow-up.
+Dropouts can potentially introduce bias into a study if the characteristics of the participants who dropped out are different from those who completed the study.
+High dropout rates can also affect the statistical power of the study and its ability to draw valid conclusions.
+Although both deviations from the intended intervention and dropout rates can potentially introduce bias into a study, they are not the same thing and should be evaluated separately when assessing the risk of bias in a study.
+%
+%
+%
 \subsection*{Signalling question - 2.3}
 \label{subsec:2_3}
 %
-For annotation instructions for this signalling question, ``Were there deviations from the intended intervention that arose because of the trial context?'' follow the Flowchart~\ref{fig:2_3}.
+Follow the Flowchart~\ref{fig:2_3} for annotation instructions of the signalling question, ``Were there deviations from the intended intervention that arose because of the trial context?''.
 %
 \begin{figure}[hbt]
     \centering
@@ -134,13 +147,10 @@ For annotation instructions for this signalling question, ``Were there deviation
     \label{fig:2_3}
 \end{figure}
 %
+
+
 The first diamond in the flowchart asks the annotators to search for quantities of deviation with a thought bubble hinting to them that these deviations are not the dropout rate in the trial.
-Deviations from the intended intervention are defined as any unintentional changes that may have occurred in the intervention being studied due to the trial context. 
-For example, participants may not have complied with the study protocol, or there may have been problems with the delivery of the intervention that could have influenced the study outcomes.
-Dropouts, on the other hand, refer to participants who withdrew from the study or were lost to follow-up.
-Dropout rates can potentially introduce bias into a study if the characteristics of the participants who dropped out are different from those who completed the study.
-High dropout rates can also affect the statistical power of the study and its ability to draw valid conclusions.
-While both deviations from the intended intervention and dropout rates can potentially introduce bias into a study, they are not the same thing and should be evaluated separately when assessing the risk of bias in a study.
+
 The diamond element also hints to the annotators that they can find this information in the text of the Results section, either within the allocation paragraph or the recruitment paragraph (green-coded arrow).
 If the information was not found within the Results section, look for it in the flowchart (either the flowcharts themselves or their captions).
 If no percentage or deviation or the number of deviations were identified in the text, do not annotate anything, and this document will be automatically marked as a ``No information'' for this signalling question.
@@ -229,6 +239,24 @@ The first diamond asks the annotators to find the number of people included in t
 If this information is found, annotate it and follow the ``yes'' flow in the diagram.
 Now examine whether the percentage of participants excluded from the ITT analysis could have had a negative impact.
 We also include a hint here, and if more than 5\% of randomized participants were excluded from ITT analysis, we ask the annotators to mark the text as ``2.7 Yes Bad'' and ``2.7 No Good'' otherwise.
+
+Good agreement only if we marks captions in flowcharts.
+So if you find the evidence in Results text, mark the full sentence in the text.
+If you find it in the flowchart, mark the caption and also ``included n=XX for ITT''.
+%
+%
+%
+%
+%
+%
+%
+\subsection*{Signalling question - 3.3 }
+%
+RoB 3.3 focuses on whether the missing data is related to the true value of the outcome. For example, if participants with higher or lower values of the outcome are more likely to drop out or have missing data, this could introduce bias. In this case, the missing data could depend on the true value of the outcome, and the results of the study could be biased.
+
+To answer this question, reviewers need to assess whether there is a potential relationship between the missing data and the true value of the outcome. This can be done by examining the reasons for missing data and analyzing whether the missing data is related to other participant characteristics or study factors.
+
+If the answer to RoB 3.3 is judged as "low risk of bias," it means that there is little risk that the missing data could have biased the study findings. If the answer is "high risk of bias," it means that there is a significant risk of bias due to missing outcome data, and the study results should be interpreted with caution.
 %
 %
 %
