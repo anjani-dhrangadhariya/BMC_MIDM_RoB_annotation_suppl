@@ -215,7 +215,7 @@ For instance, consider the following sentence, ``Because baseline ODI difference
 \label{sec:dom2}
 %
 Before detailing annotation instructions for this domain, we clarify the difference between deviations from intended interventions and dropouts from the trial.
-Deviation from intended interventions are any unintentional changes that could have occurred in the intervention under investigation in the trial.
+Deviations from intended interventions are any unintentional changes that could have occurred in the intervention under investigation in the trial.
 For example, participants may not have complied with the study protocol, or there might have been problems with the delivery of the intervention that could have influenced the study outcomes.
 In contrast, dropouts refer to participants who withdrew from the study or were lost to follow-up.
 Dropouts can potentially introduce bias into a study if the characteristics of the participants who dropped out are different from those who completed the study.
@@ -288,7 +288,17 @@ For example, blinding may not be possible in studies where the intervention and 
 \subsection*{Signalling question - 2.2}
 \label{subsec:2_2}
 %
-xOx
+
+%
+\begin{figure}[hbt]
+    \centering
+    \includegraphics[width=\textwidth]{figures/2_2.png}
+    \caption{Annotation instructions for the RoB 2.2 signalling question.}
+    \label{fig:2_2}
+\end{figure}
+%
+
+
 %
 %
 %
@@ -394,13 +404,17 @@ Therefore, this question is important for assessing the risk of bias associated 
 
 The analysis we focus on this question is ITT or intent-to-treat analysis.
 The first diamond asks the annotators to find the number of people included in the ITT analysis vs. the number of people randomized to each of the intervention/comparator groups. 
-If this information is found, annotate it and follow the ``yes'' flow in the diagram.
+If this information (number of people included in the analysis vs number of people randomized to each group) is found, annotate it and follow the ``yes'' flow in the diagram.
 Now examine whether the percentage of participants excluded from the ITT analysis could have had a negative impact.
 We also include a hint here, and if more than 5\% of randomized participants were excluded from ITT analysis, we ask the annotators to mark the text as ``2.7 Yes Bad'' and ``2.7 No Good'' otherwise.
 
-Good agreement only if we marks captions in flowcharts.
-So if you find the evidence in Results text, mark the full sentence in the text.
-If you find it in the flowchart, mark the caption and also ``included n=XX for ITT''.
+A good agreement is only if we mark captions in flowcharts.
+The first preference to find this information is the results section, and if found, then mark the full sentence in the text.
+If the information is not found in the results section, mark the text in the table.
+If the information is to be found nowhere except in a flowchart, mark the caption of the flowchart.
+However, ensure that the flowchart annotation is your last resort.
+
+If you find it in the flowchart, mark the caption and also ``included n=XX for ITT''. % Unfortunately you cannot mark the flowchart because the new tool does not allow image annotation
 %
 %
 %
