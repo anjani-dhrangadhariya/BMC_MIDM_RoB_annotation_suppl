@@ -492,7 +492,20 @@ If no information regarding ITT analysis, naive ``per-protocol'' analysis, or ``
 %
 \subsection*{Signalling question - 2.7 }
 %
-For annotation instructions for this signalling question, ``Was there potential for a substantial impact (on the result) of the failure to analyse participants in the group to which they were randomized?'' follow the Flowchart~\ref{fig:2_7}.
+The question ``Was there potential for a substantial impact (on the result) of the failure to analyze participants in the group to which they were randomized?'' refers to the risk of bias associated with deviations from the intended analysis plan in an RCT.
+In an RCT, participants are usually randomized to receive either the intervention being tested or a control intervention.
+The analysis plan is typically based on the assumption that all participants will be analyzed according to the group to which they were randomized.
+However, there may be instances where participants are not analyzed in the group to which they were randomized, for example, if they dropped out of the study or if they switched groups.
+This is known as a deviation from the intended analysis plan.
+The question is asking whether this deviation from the intended analysis plan could have had a substantial impact on the study results.
+If there is a potential for a substantial impact, then there is a high risk of bias.
+For example, if a large proportion of participants in the intervention group dropped out of the study, but all participants in the control group were analyzed, this could lead to an overestimation of the treatment effect.
+Similarly, if participants switched groups, this could lead to an underestimation or overestimation of the treatment effect.
+%Therefore, this question is important for assessing the risk of bias associated with deviations from the intended analysis plan in an RCT, and it helps to ensure that the study results are reliable and valid.
+
+
+%
+%
 %
 \begin{figure}[hbt]
     \centering
@@ -500,33 +513,27 @@ For annotation instructions for this signalling question, ``Was there potential 
     \caption{Annotation instructions for the RoB 2.7 signalling question.}
     \label{fig:2_7}
 \end{figure}
+%
+%
+%
 
 
-The question ``Was there potential for a substantial impact (on the result) of the failure to analyze participants in the group to which they were randomized?'' in the Cochrane Risk of Bias (RoB) 2.0 tool refers to the risk of bias associated with deviations from the intended analysis plan in a randomized controlled trial (RCT).
-
-In an RCT, participants are usually randomized to receive either the intervention being tested or a control intervention. The analysis plan is typically based on the assumption that all participants will be analyzed according to the group to which they were randomized. However, there may be instances where participants are not analyzed in the group to which they were randomized, for example, if they dropped out of the study or if they switched groups. This is known as a deviation from the intended analysis plan.
-
-The question is asking whether this deviation from the intended analysis plan could have had a substantial impact on the study results. If there is a potential for a substantial impact, then there is a high risk of bias. For example, if a large proportion of participants in the intervention group dropped out of the study, but all participants in the control group were analyzed, this could lead to an overestimation of the treatment effect. Similarly, if participants switched groups, this could lead to an underestimation or overestimation of the treatment effect.
-
-Therefore, this question is important for assessing the risk of bias associated with deviations from the intended analysis plan in an RCT, and it helps to ensure that the study results are reliable and valid.
-
-
+For annotation instructions for this signalling question, ``Was there potential for a substantial impact (on the result) of the failure to analyse participants in the group to which they were randomized?'' follow the Flowchart~\ref{fig:2_7}.
 The analysis we focus on this question is ITT or intent-to-treat analysis.
-The first diamond asks the annotators to find the number of people included in the ITT analysis vs. the number of people randomized to each of the intervention/comparator groups. 
-If this information (number of people included in the analysis vs number of people randomized to each group) is found, annotate it and follow the ``yes'' flow in the diagram.
+The first diamond asks the annotators to find the number of people included in the (modified) ITT analysis vs. the number of people randomized to each of the intervention/comparator groups. 
+If this information is found, annotate it and follow the ``yes'' flow in the flowchart.
 Now examine whether the percentage of participants excluded from the ITT analysis could have had a negative impact.
-We also include a hint here, and if more than 5\% of randomized participants were excluded from ITT analysis, we ask the annotators to mark the text as ``2.7 Yes Bad'' and ``2.7 No Good'' otherwise.
-
-A good agreement is only if we mark captions in flowcharts.
-The first preference to find this information is the results section, and if found, then mark the full sentence in the text.
+We also include a hint here, and if more than 5\% of randomized participants were excluded from ITT analysis, the annotators mark the text as ``2.7 Yes Bad'' and ``2.7 No Good'' otherwise.
+The first preference to find this information is the Results section.
+This information is usually found in the flowcharts, but using our current annotation software, we cannot label the text found in images, and we keep labelling flowcharts as a second priority. 
+Therefore, for the sake of simplicity and good agreement, the annotators are requested to mark the flowchart captions.
 If the information is not found in the results section, mark the text in the table.
 If the information is to be found nowhere except in a flowchart, mark the caption of the flowchart.
 However, ensure that the flowchart annotation is your last resort.
 
-If you find it in the flowchart, mark the caption and also ``included n=XX for ITT''. % Unfortunately, you cannot mark the flowchart because the new tool does not allow image annotation
-
-Sometimes there could be disagreements here. Let's take for example, Solomons\_2020\_VISA\_A\_12months\_IAA\_Hilfiker\_Sattelmayer\_with\_Protocol.pdf where Martin marks "We did not impute or replace any missing values but rather fitted all the available data to the model" as No good. 
-However, what does the phrase "all the available data" mean? Maybe only 70\% of the outcomes data was available.
+%If you find it in the flowchart, mark the caption and also ``included n=XX for ITT''. % Unfortunately, you cannot mark the flowchart because the new tool does not allow image annotation
+%Sometimes there could be disagreements here. Let's take for example, Solomons\_2020\_VISA\_A\_12months\_IAA\_Hilfiker\_Sattelmayer\_with\_Protocol.pdf where Martin marks "We did not impute or replace any missing values but rather fitted all the available data to the model" as No good. 
+%However, what does the phrase "all the available data" mean? Maybe only 70\% of the outcomes data was available.
 %
 %
 %
