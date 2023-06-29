@@ -160,7 +160,7 @@ If the text describes a bad or improper method of randomization, mark the text w
 This description should be a few words or a phrase and not a complete sentence.
 If you did not find any information about the randomization methodology, but if the system finds relating terms like ``random'', ``randomized trial'' or phrases like ``we did random allocation'' are automatically detected, then such phrases will be marked with the label ``1.1 No Information''.
 The information about random sequence allocation can be found in the methods section (first priority) or the abstract (second priority).
-Notice that for this signalling question, the annotators are required to mark phrases rather than full sentences~\cite{saltaji2017randomized}.
+Notice that for this signalling question, the annotators are required to mark phrases rather than full sentences~\cite{sterne2019rob,saltaji2017randomized}.
 %
 %
 %
@@ -196,7 +196,7 @@ Good methods of allocation concealment include central randomization, sealed opa
 If an improper method of allocation concealment is utilized, then mark the method with ``1.2 No Bad''.
 The improper methods of allocation concealment include using an open list, a predictable sequence like alternating using the date of birth or other characteristics, and/or using the participant's choice.
 The primary sources for finding information about allocation concealment are the methods section (first priority, as shown in the Green arrow) and the abstract (second priority, as shown in the yellow arrow).
-Notice that for this signalling question, too, the annotators are required to mark phrases rather than full sentences~\cite{rahim2021effect}.
+Notice that for this signalling question, too, the annotators are required to mark phrases rather than full sentences~\cite{sterne2019rob,rahim2021effect}.
 
 
 %Following the above explanation, the first diamond in the flowchart~\ref{fig:1_2} instructs the annotators to identify the method of allocation concealment, and if a proper allocation concealment method is found, but it lacks certain details pertaining to making a judgement, then mark the method and label it with ``1.2 No Information''.
@@ -213,7 +213,7 @@ Notice that for this signalling question, too, the annotators are required to ma
 The signalling question ``Did baseline differences between intervention groups suggest a problem with the randomization process?'' of the RoB 2 tool is related to the potential for bias arising from differences in baseline characteristics between intervention groups that are not related to chance and may suggest a problem with the randomization process.
 Even with good randomization, chance imbalances in baseline characteristics can occur leading to an ineffective randomization.
 For example, if the intervention group has significantly more female participants, older participants, or participants with more severe disease at baseline compared to the control group, this may suggest that the randomization process was not effective or that there was a problem with the allocation sequence.
-This can lead to biased estimates of treatment effects and decrease the internal validity of the study.
+This can lead to biased estimates of intervention effects and decrease the internal validity of the study.
 So this question addresses whether any differences in baseline characteristics between intervention groups suggest that the randomization process was not effective.
 If there are significant differences in baseline characteristics between intervention groups that are not related to chance, this may suggest that the randomization process was not effective, and the reliability of the study results may be decreased.
 %
@@ -230,14 +230,14 @@ If there are significant differences in baseline characteristics between interve
 %
 %
 Follow the Flowchart~\ref{fig:1_3} for annotation instructions of the signalling question, ``Did baseline differences between intervention groups suggest a problem with the randomization process?''.
-Look for the answer in the table describing the demographic and clinical baseline characteristics of study participants. 
-At this point, we request the annotators to mark the full table instead of one or two characteristics, as extracted table text from PDFs lacks the inherent structure necessary for training machine learning models.
-Therefore, it will be difficult to use the extracted table text to train the machine learning models. 
+The information to assess this question could be found in the table describing the demographic and clinical baseline characteristics of study participants. 
+At this point, the first diamond requests the annotators to mark the full table instead of one or two characteristics, as extracted table text from PDFs lacks the inherent structure necessary for training machine learning models.
+Therefore, it will be difficult to use the extracted table text to train the machine learning models effectively. 
 If the table for baseline patient characteristics shows excessive similarity or dissimilarity in the baseline characteristics that ARE NOT compatible with chance, then mark the full table and table caption with the label ``1.3 Yes Bad'' otherwise, mark the full table and the table caption with the label ``1.3 No Good''.
-If you did not find any table describing the baseline patient characteristics, then the RCT study will be ultimately assumed as ``1.3 No Information'' for this SQ.
 In some cases, this table is missing, but there could be text descriptions that could hint towards baseline differences that could act as confounding factors.
-For instance, consider the following sentence, ``Because baseline ODI differences were a potential confounding factor, an adjusted multiple linear and logistic regression analysis was performed for each continuous and categorical outcome measure, respectively.''%~\citep{cohen2008randomized}
+For instance, consider the following sentence, ``Because baseline ODI differences were a potential confounding factor, an adjusted multiple linear and logistic regression analysis was performed for each continuous and categorical outcome measure...''~\citep{cohen2008randomized}.
 If you find any such information in the full text, mark it with the label ``1.3 No Information''.
+The goal is to capture any relevant information in the full text or table that can help determine if baseline differences between intervention groups indicate a problem with randomization.
 %
 %
 %
