@@ -364,9 +364,9 @@ For example, ``...we wanted to evaluate the commonly used methods that often inv
 This signalling question 2.3, ``Were there deviations from the intended intervention that arose because of the trial context?'' aims to assess the risk of bias associated with deviations from the intended intervention in a study.
 It seeks to determine whether any deviations occurred during the trial due to factors related to the trial context.
 The intended intervention refers to the specific treatment or intervention that is planned to be delivered to participants.
-Deviations from the intended intervention can occur for various reasons, such as practical challenges, implementation issues, or unforeseen circumstances within the trial context.
-This question focuses on assessing whether these deviations from the intended intervention were due to factors directly related to the trial itself rather than factors outside the trial.
-It helps evaluate the extent to which the trial protocol was followed and whether the trial results may have been influenced by these deviations.
+Deviations from the intended intervention can occur for various reasons, such as practical challenges, implementation issues, or unforeseen circumstances within the trial context~\cite{paterson2019feasibility}.
+This question focuses on assessing whether these deviations from the intended intervention were due to factors directly related to the trial rather than factors outside the trial.
+It helps evaluate the extent to which the trial protocol was followed and whether the trial results could have been influenced by these deviations.
 
 %
 %
@@ -384,18 +384,20 @@ It helps evaluate the extent to which the trial protocol was followed and whethe
 Follow the Flowchart~\ref{fig:2_3} for annotation instructions of the signalling question, ``Were there deviations from the intended intervention that arose because of the trial context?''.
 In the flowchart, the first diamond prompts annotators to search for information regarding the number of deviations from the intended intervention.
 It clarifies that these deviations are not related to the dropout rate in the trial.
-The diamond also indicates that the information can be found in the text of the Results section, specifically within the allocation or recruitment paragraphs (indicated by the green-coded arrow).
-If the information is not found in the Results section, annotators should check the flowcharts themselves or their captions for any relevant details.
 If no percentage or absolute number of deviations is identified in the text, no annotation is necessary, and the document will be automatically marked as ``2.3 No Information'' for this signalling question, following the  ``No'' arrow.
 If the percentage of deviations is identified, annotators should annotate the full sentence where this information is found.
+%For example, during the course of a trial, a certain number of patients could deviate from their assigned intervention or failed to adhere to the prescribed treatment due to various reasons such as lack of improvement, side effects, or personal preference.
 They should then proceed to the next diamond in the flowchart, following the ``Yes'' flow, and assess whether these deviations occurred due to the trial context.
 If the deviations are determined to be due to the trial context, the annotated sentence(s) should be marked as ``2.3 Yes Bad''.
 If the deviations are not attributed to the trial context, they should be marked as ``2.3 No Good''.
+For example, ``Two patients in the control group receiving physiotherapy (usual care) erroneously attended the PT-led education and exercise programme after...''~\cite{osteraas2019implementing}. % Anjani: requires fact-checking if this is 2.3 Yes Bad or No Good
 Additionally, if annotators identify the reasons for their choices of ``no good'' or ``yes bad'', they should mark the sentences explaining their rationale.
 It is important to note that a second annotation may be required if there are supporting sentences for the reason behind the choice.
 This second annotation allows for capturing additional information.
+This information can be found in the text of the Results section, specifically within the allocation or recruitment paragraphs (indicated by the green-coded arrow on the diamonds).
+Only if the information is not found in the Results section, should the annotators check the flowcharts or their captions for any relevant details.
 The judgment regarding the trial context and deviations can be subjective, and it is left to the reviewers' discretion once they have access to the deviation information.
-However, at least you will have the annotated information about the percentage/number of deviations which could be used to train the machine learning models.
+However, at least the annotators will have the annotated information about the percentage/number of deviations which could be used to train the machine learning models.
 Ultimately, the review of deviations and trial context is subjective, but the annotated information can be used to train machine learning models.
 %
 %
