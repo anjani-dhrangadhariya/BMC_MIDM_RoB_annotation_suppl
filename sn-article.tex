@@ -57,7 +57,6 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
-\bibliography{sn-bibliography.bib}
 %\usepackage{biblatex}
 %\addbibresource{sn-bibliography.bib}
 %%%%
@@ -121,17 +120,17 @@ It is important to note that these generic annotation guidelines are supplementa
 \section*{Annotation Guidelines for RoB domain 1}
 \label{sec:dom1}
 %
-The first risk domain in the RoB 2 tool is referred to as ``Bias stemming from the randomization process''.
-It encompasses two subdomains: ``Random sequence generation'' and ``Allocation concealment''.
-Randomization is a key methodological process in RCTs, designed to ensure that participants are assigned to different treatment groups in an unbiased and unpredictable manner.
-This domain evaluates the likelihood of bias associated with the randomization process, a crucial element in mitigating potential selection bias in RCTs.
+The first risk domain in the RoB 2 tool assists assessment of the ``Bias stemming from the randomization process'' focusing on the three major aspects: 1. random sequence generation, 2. allocation concealment of the enrolled participants, and 3. was the randomized adequately implemented in practice.
+Proper randomization is central to randomized controlled trials and ensures that participants are assigned to intervention groups in an unbiased manner and enables comparison of intervention outcomes across all groups.
+%The first risk domain in the RoB 2 tool is assists assessment of the ``Bias stemming from the randomization process''.
+%It encompasses two subdomains: ``Random sequence generation'' and ``Allocation concealment''.
+%Randomization is a key methodological process in RCTs, designed to ensure that participants are assigned to different treatment groups in an unbiased and unpredictable manner.
+%This domain evaluates the likelihood of bias associated with the randomization process, a crucial element in mitigating potential selection bias in RCTs.
 %
 %
 %
 \subsection*{Signalling question: 1.1}
-%
-%
-%
+\label{subsec:1_1}
 %
 \begin{figure}[hbt]
     \centering
@@ -142,40 +141,38 @@ This domain evaluates the likelihood of bias associated with the randomization p
 %
 %
 %
-Signalling question 1.1 ``Was the allocation sequence random?'' is used to assess the RoB related to the randomization process in a study.
-It aims to determine whether the allocation of participants to different groups or interventions was done in a random manner.
+
+
+
+%Signalling question 1.1 ``Was the allocation sequence random?'' is used to assess the RoB related to the randomization process in a study.
+%It aims to determine whether the allocation of participants to different groups or interventions was done in a random manner.
+Signalling question 1.1 ``Was the allocation sequence random?'' assesses whether the allocation of participants to different groups or interventions was done in a random manner.
 If the allocation sequence is generated randomly, this reduces the risk of bias, as it ensures that the allocation is not influenced by the researchers' preferences or the participants' characteristics.
-Some of the good random allocation methods include simple randomization (coin flipping, random number generator), stratified randomization, blocked randomization, cluster randomization, and adaptive randomization.
+Some of the good random allocation methods include simple randomization (coin flipping, random number generator), stratified randomization, blocked randomization, cluster randomization, and adaptive randomization~\cite{sterne2019rob}.
 If the allocation sequence was not generated using a proper randomization method, this increases the risk of bias in the study.
 For e.g., if the allocation sequence was generated using a non-random method, such as alternating assignment or assignment based on participant characteristics, this could introduce bias into the study.
 
+
+
 Follow the Flowchart~\ref{fig:1_1} for annotation instructions of the signalling question, ``Was the allocation sequence random?''.
-Following the above explanation, the first diamond in the flowchart instructs the annotators to identify the randomization method for allocation sequence, and if a proper randomization method is found, mark the method with ``1.1 Yes Good''.
+Following the above explanation, the first diamond in the flowchart instructs the annotators to identify the randomization method for allocation sequence, and if a proper randomization method is found, mark the method description with ``1.1 Yes Good''.
 If the text describes a bad or improper method of randomization, mark the text with ``1.1 No Bad''.
-This should be a few words or a phrase and not a complete sentence.
-If you did not find any information about the randomization methodology but if the terms like ``random'', ``randomized trial'' or phrases like ``we did random allocation'' are automatically detected, then such phrases will be marked with the label ``1.1 No Information''.
+This description should be a few words or a phrase and not a complete sentence.
+If you did not find any information about the randomization methodology, but if the system finds relating terms like ``random'', ``randomized trial'' or phrases like ``we did random allocation'' are automatically detected, then such phrases will be marked with the label ``1.1 No Information''.
 The information about random sequence allocation can be found in the methods section (first priority) or the abstract (second priority).
-Notice that for this signalling question, the annotators are required to mark phrases rather than full sentences.
+Notice that for this signalling question, the annotators are required to mark phrases rather than full sentences~\cite{saltaji2017randomized}.
 %
 %
 %
 \subsection*{Signalling question: 1.2}
 %
-The signalling question ``Was the allocation sequence concealed until participants were enrolled and assigned to interventions?'' focuses on assessing the risk of bias related to allocation concealment in a study. 
+The signalling question ``Was the allocation sequence concealed until participants were enrolled and assigned to interventions?'' focuses on assessing the risk of bias related to allocation concealment in a study.
 In RCTs, the allocation sequence determines the order in which participants are assigned to each intervention group.
 Adequate concealment of the allocation sequence refers to the process of keeping the sequence hidden from those who are involved in enrolling and assigning participants to intervention groups.
 This helps to prevent the possibility of selection bias, which can occur if those enrolling participants in the trial have knowledge of the allocation sequence and can manipulate the assignment of participants to intervention groups based on that knowledge.
 If the allocation sequence is not adequately concealed until participants are enrolled and assigned to interventions, this can increase the risk of bias and may lead to systematic differences between the intervention groups.
-For example, if the allocation sequence is known to the investigators or coordinators, they may selectively enrol participants who are more likely to benefit from a particular intervention, or they may assign participants to one intervention group over another based on personal biases or preferences.
-Good methods of allocation concealment include central randomization, sealed opaque envelopes, and using online randomization tools that offer to securely generate and conceal the allocation sequence.
-On the other hand, the improper or bad methods of allocation concealment include using an open list, a predictable sequence like alternating using the date of birth or other characteristics, and/or using the participant's choice.
-% Centralized randomization: This involves using a central unit or an independent third party to generate and conceal the allocation sequence. This helps to ensure that the allocation sequence is kept hidden from those enrolling and assigning participants to intervention groups.
-% Sealed opaque envelopes: This involves preparing sealed envelopes with the allocation sequence inside. The envelopes are then kept in a secure location and opened sequentially as participants are enrolled in the trial.
-% Online randomization tools: This involves using secure online systems to generate and conceal the allocation sequence. The system ensures that the allocation sequence is not visible to those enrolling and assigning participants to intervention groups.
-%The bad methods of randomization:
-%Using an open list: This involves using a visible list of randomization codes, which allows those enrolling and assigning participants to intervention groups to see the allocation sequence. This method does not provide adequate concealment of the allocation sequence and increases the risk of selection bias.
-%Using a predictable sequence: This involves using a predictable sequence to allocate participants to intervention groups, such as alternating between groups or using birth dates to determine group assignment. This method does not provide adequate concealment of the allocation sequence and increases the risk of selection bias.
-%Using the participant's choice: This involves allowing participants to choose their intervention group. This method does not provide adequate concealment of the allocation sequence and increases the risk of selection bias, as participants may choose the intervention group based on personal preferences or expectations.
+For example, if the allocation sequence is known to the investigators or coordinators, they may selectively enroll participants who are more likely to benefit from a particular intervention, or they may assign participants to one intervention group over another based on personal biases or preferences.
+
 %
 %
 %
@@ -189,12 +186,25 @@ On the other hand, the improper or bad methods of allocation concealment include
 %
 %
 
+
+
 Follow the Flowchart~\ref{fig:1_2} for annotation instructions of the signalling question, ``Was the allocation sequence concealed until participants were enrolled and assigned to interventions?''.
-Following the above explanation, the first diamond in the flowchart~\ref{fig:1_2} instructs the annotators to identify the method of allocation concealment, and if a proper concealment method is found, mark the method with ``1.2 Yes Good''.
-The first diamond in the flowchart prompts annotators to identify the method of allocation concealment. If a proper concealment method is found, it should be marked as ``1.2 No Information''.
-If the information is incomplete or lacks details for judgment, it should be marked as ``1.2 No Bad''.
+Based on the explanation given earlier, the first diamond in the flowchart guides annotators to identify the method of allocation concealment. If a proper allocation concealment method is identified but lacks certain details necessary for making a judgment, it should be marked with ``1.2 No Information''.
+For instance, if the description mentions the use of sealed envelopes but does not specify whether they were opaque, it would be marked as ``1.2 No Information''.
+On the other hand, if enough information is provided to make a judgment, it should be marked with ``1.2 Yes Good''.
+Good methods of allocation concealment include central randomization, sealed opaque envelopes, and using online randomization tools that offer to securely generate and conceal the allocation sequence.
+If an improper method of allocation concealment is utilized, then mark the method with ``1.2 No Bad''.
+The improper methods of allocation concealment include using an open list, a predictable sequence like alternating using the date of birth or other characteristics, and/or using the participant's choice.
 The primary sources for finding information about allocation concealment are the methods section (first priority, as shown in the Green arrow) and the abstract (second priority, as shown in the yellow arrow).
-Notice that for this signalling question, too, the annotators are required to mark phrases rather than full sentences.
+Notice that for this signalling question, too, the annotators are required to mark phrases rather than full sentences~\cite{rahim2021effect}.
+
+
+%Following the above explanation, the first diamond in the flowchart~\ref{fig:1_2} instructs the annotators to identify the method of allocation concealment, and if a proper allocation concealment method is found, but it lacks certain details pertaining to making a judgement, then mark the method and label it with ``1.2 No Information''.
+%For example, ``Sequence was concealed using sealed envelope'' does hint that allocation concealment was in place, but it still lacks the information about whether the envelope was opaque or not.
+%In such case, mark the description with ``1.2 No Information'', otherwise if enough information is provided for making a judgement, mark the description with ``1.2 Yes Good.
+%Good methods of allocation concealment include central randomization, sealed opaque envelopes, and using online randomization tools that offer to securely generate and conceal the allocation sequence.
+%If an improper method of allocation concealment is utilized, then mark the method with ``1.2 No Bad''.
+%On the other hand, the improper methods of allocation concealment include using an open list, a predictable sequence like alternating using the date of birth or other characteristics, and/or using the participant's choice.
 %
 %
 %
@@ -867,7 +877,7 @@ The information is likely found in the Methods section.
 %
 %
 \section*{Annotation Guidelines for RoB domain 5}
-\label{sec:dom4}
+\label{sec:dom5}
 %
 Risk domain 5 in RoB 2 tool refers to the ``Bias in the selection of reported results'' domain.
 This domain assesses the risk of bias that may arise from the selective reporting of outcomes or analyses within a study.
@@ -910,6 +920,7 @@ This ensures transparency and reduces the risk of bias arising from selective re
 %
 %
 %
+\clearpage
 %%===========================================================================================%%
 %% If you are submitting to one of the Nature Portfolio journals using the eJP submission   %%
 %% system, please include the references within the manuscript file itself. You may do this  %%
