@@ -246,17 +246,17 @@ The goal is to capture any relevant information in the full text or table that c
 %
 The second risk domain in the RoB 2 tool is referred to as ``Bias due to deviations from intended interventions''.
 In RCTs, it is essential to ensure that participants in a study are assigned to the intended interventions accurately and that the interventions are administered as planned.
-However, there can be deviations or departures from the intended interventions when participants do not receive the assigned treatment or when they do not adhere to the prescribed regimen.
+However, there can be deviations from the intended interventions when participants do not receive the assigned treatment or when they do not adhere to the prescribed regimen.
 This can happen for various reasons, such as non-compliance by participants, crossovers between treatment groups, or missing data due to dropout or loss to follow-up.
 
 
-Before detailing the annotation instructions for signalling questions, we clarify the difference between deviations from intended interventions and dropouts from the trial.
+NOTE: Before detailing the annotation instructions for signalling questions, we clarify the difference between deviations from intended interventions and dropouts from the trial.
 Deviations from intended interventions are any unintentional changes that could have occurred in the intervention under investigation in the trial.
 For example, participants may not have complied with the study protocol, or there might have been problems with the delivery of the intervention that could have influenced the study outcomes.
 In contrast, dropouts refer to participants who withdrew from the study or were lost to follow-up.
 Dropouts can potentially introduce bias into a study if the characteristics of the participants who dropped out are different from those who completed the study.
 High dropout rates can also affect the statistical power of the study and its ability to draw valid conclusions.
-Although both deviations from the intended intervention and dropout rates can potentially introduce bias into a study, they are not the same thing and should be evaluated separately when assessing the risk of bias in a study.
+Although both deviations from the intended intervention and dropout rates can potentially introduce bias into a study, they are not the same thing and should be evaluated separately when assessing the risk of bias in a study~\cite{imel2013meta,cedenilla2023psychosocial}.
 %
 %
 %
@@ -264,12 +264,14 @@ Although both deviations from the intended intervention and dropout rates can po
 \label{subsec:2_1}
 %
 The signalling question, ``Were participants aware of their assigned intervention during the trial?'' assess whether the clinical study performed proper blinding or masking of the trial participants.
-Blinding or masking of participants is an essential method to minimize the risk of bias due to participants' knowledge of their assigned intervention.
+Blinding or masking of participants is important to minimize the risk of bias due to participants' knowledge of their assigned intervention.
 When participants are not blinded, they may modify their behaviour, expectations, or reports of outcomes, consciously or unconsciously, based on their knowledge of the assigned intervention, leading to a biased estimate of the treatment effect.
-However, if blinding was successfully applied, this may decrease the risk of bias and increase the internal validity of the study.
-Proper blinding of participants involves concealing the intervention to ensure that the participants do not know which intervention they received.
-Proper blinding of participants in physiotherapy and rehabilitation domains is challenging, so we discuss a few blinding strategies for these domains. 
-Proper blinding in rehabilitation trials can be challenging, but several methods can be used to minimize the risk of bias due to the knowledge of the assigned intervention by the study participants and therapists. These methods include the use of placebo or sham interventions; for example, in studies of manual therapy, a sham therapy such as light touch or a placebo intervention like ultrasound can be used to blind the participants, and use of standardized interventions, therapist blinding, remote monitoring, and masking techniques.
+Proper blinding of participants involves concealing the intervention to ensure that the participants do not know which intervention they received~\cite{cedenilla2023psychosocial,swan2003bupropion,o2012rethinking}.
+Proper blinding of participants in physiotherapy and rehabilitation domains is challenging due to the nature of the interventions. 
+In these domains blinding may not be possible in studies because the intervention and control pairs involve a clear difference in the type or frequency of therapy being delivered, such as exercise interventions, behavioural interventions, educational interventions, and mind-body interventions~\cite{andersson2020effect,buttery2023lung}.
+% Some of good blinding strategies for these domain are listed below.
+%Proper blinding in rehabilitation trials can be challenging, but several methods can be used to minimize the risk of bias due to the knowledge of the assigned intervention by the study participants and therapists.
+%These methods include the use of placebo or sham interventions; for example, in studies of manual therapy, a sham therapy such as light touch or a placebo intervention like ultrasound can be used to blind the participants, and use of standardized interventions, therapist blinding, remote monitoring, and masking techniques.
 %Use of placebo or sham interventions: In some rehabilitation trials, a placebo or sham intervention can be used to blind the participants and therapists to the assigned intervention. For example, in studies of manual therapy, a sham therapy such as light touch or a placebo intervention like ultrasound can be used to blind the participants.
 %Use of standardized interventions: Standardized interventions can be used to ensure that all participants receive the same intervention regardless of the assigned group. This approach helps reduce the risk of bias and ensures that all participants receive the same level of care.
 %Use of therapist blinding: In some rehabilitation trials, therapists can be blinded to the assigned intervention. This approach is particularly useful when the intervention involves physical contact with the participant. For example, in studies of physical therapy, therapists can be trained to provide the same level of care and attention to all participants, regardless of the assigned intervention.
@@ -305,31 +307,31 @@ If text parts describing the intervention and placebo administration are not fou
 
 
 Going back to the first diamond, if the annotators did not find any information stating that the participants were unaware of the assigned intervention, they are asked to go to part II of the placard~\ref{fig:2_1_1}.
-If the annotators find that the study is ``open-label'', or found the sentence(s) mentioning that there was no blinding, or participants were aware, or could not be blinded, or something along the lines of the sentences mentioned below, then annotate such sentences with the label ``2.1 ProbablyYes Bad''.
-This information can be found either in the Methods section or the abstract.
-\begin{enumerate}
-    \item Due to the nature of the intervention, it was not possible to blind the participants to their assigned group.
-    \item The physical nature of the intervention made it impossible to blind the participants to their assigned group.
-    \item Participants were not blinded to their assigned group as the intervention required direct physical contact and feedback from the therapist.
-    \item Blinding of participants was not possible as the intervention involved active participation from the participants and required visual and physical feedback.
-    \item The participants were aware of their assigned group, as the nature of the intervention made it difficult to conceal the type of therapy being delivered.
-\end{enumerate}
-%
-%
-%
+If the annotators find that the study is ``open-label'', or found the sentence(s) mentioning that there was no blinding, or participants were aware, or could not be blinded, or something along the lines of the sentences mentioned below, then annotate such sentences with the label ``2.1 Yes Bad''.
+For example, 1) ``Blinding of trial participants and the trial coordinator was not possible due to the nature of the interventions,...'', and 2) ``...we wanted to evaluate the commonly used methods that often involve parents’ actions, and blinding of parents to participants, care providers, or assessors was not possible due to the nature of the intervention.''~\cite{buttery2023lung,andersson2020effect}.
 If the information about the study being ``open-label'' or participants being aware is not found, but the annotator thinks that for the intervention-comparator (IC) pair, it is not possible to achieve blinding using the IC pairs then annotate the phrases/words that give information about IC (names of intervention and comparator) with the label ``2.1 Probably Yes Bad''.
-For example, blinding may not be possible in studies where the intervention and control intervention pairs involve a clear difference in the type or frequency of therapy being delivered, such as surgical interventions, exercise interventions, behavioural interventions, educational interventions, and mind-body interventions.
+Blinding information can be found either in the Methods section or the abstract.
+%\begin{enumerate}
+%    \item Due to the nature of the intervention, it was not possible to blind the participants to their assigned group.
+%    \item The physical nature of the intervention made it impossible to blind the participants to their assigned group.
+%    \item Participants were not blinded to their assigned group as the intervention required direct physical contact and feedback from the therapist.
+%    \item Blinding of participants was not possible as the intervention involved active participation from the participants and required visual and physical feedback.
+%    \item The participants were aware of their assigned group, as the nature of the intervention made it difficult to conceal the type of therapy being delivered.
+%\end{enumerate}
 %
 %
 %
 \subsection*{Signalling question - 2.2}
 \label{subsec:2_2}
 %
-While the previous signalling question assessed participant blinding, this question, ``Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?'' assesses whether the carers and individuals delivering the interventions were aware of the participants' assigned interventions during the trial.
-Blinding or masking of carers and intervention providers is important to minimize the risk of bias that can arise if they have knowledge of the participants' assigned interventions.
-If carers and intervention providers are not blinded, their awareness of the assigned interventions may influence their behaviour, interactions with participants, and delivery of the interventions.
-This can potentially introduce bias and affect the study outcomes.
+While the previous signalling question assessed participant blinding, this question, ``Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?'' evaluates whether the carers and individuals delivering the interventions were aware of the participants' assigned interventions during the trial.
+%Blinding or masking of carers and intervention providers is important to minimize the risk of bias that can arise if they have knowledge of the participants' assigned interventions.
+If carers and treatment administrators are not blinded, their awareness of the assigned interventions may influence their behaviour, interactions with participants, and delivery of the interventions potentially introducing bias and affect the study outcomes~\cite{hrobjartsson2011blinding}.
 
+
+
+%
+%
 %
 \begin{figure}[hbt]
     \centering
@@ -338,12 +340,21 @@ This can potentially introduce bias and affect the study outcomes.
     \label{fig:2_2}
 \end{figure}
 %
+%
+%
+
+
 Follow the Flowcharts~\ref{fig:2_2} for annotation instructions of the signalling question, ``Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?''.
 Following the above explanation, the first diamond instructs the annotators to find any sentences stating or clearly implying if the carers and administrators could not distinguish between intervention and placebo.
 If no such sentences were found, the label ``2.2 No Information'' will be assumed for this question.
-If such sentences are found, then annotate them and follow the connector line towards the decision ``Yes'', find the sentences that describe intervention and placebo administration and annotate both the descriptions – the first part where intervention administration is described, and the second part where proper participant blinding via a placebo is described.
+If such sentences are found, then annotate them and follow the connector line towards the decision ``Yes'', then find the sentences that describe intervention and placebo administration and annotate both the descriptions – the first part where intervention administration is described, and the second part where proper participant blinding via a placebo is described.
 Annotate all these parts with the label ``2.1 No Good''.
-If no proper carer blinding was described, then the sentences identified from the first diamond were marked with the label ``2.2 Yes Bad''.
+For example, ``This RCT used a 5-week, double-blind, parallel groups design'', ``Treatment was administered by an RA who was blinded to assessment results and study hypotheses''\cite{chiaravalloti2020efficacy}.
+If no proper carer blinding was described or if it was explicitly mentioned that carer blinding was not possible, then the sentences identified using the first diamond should be marked with the label ``2.2 Yes Bad''.
+For example, ``...we wanted to evaluate the commonly used methods that often involve parents’ actions, and blinding of parents to participants, care providers, or assessors was not possible due to the nature of the intervention''~\cite{andersson2020effect}.
+
+
+
 %
 %
 %
