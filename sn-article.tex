@@ -696,8 +696,11 @@ This is a theoretical question, the answer to which could be basically obtained 
 \subsection*{Signalling question - 3.4 }
 \label{subsec:3_4}
 %
-XOX
+The question ``Is it likely that the missingness in the outcome depended on its true value?'' assesses the likelihood of missing outcome data to be related to the actual values of the outcome variable.
 
+%
+%
+%
 \begin{figure}[hbt]
     \centering
     \includegraphics[width=\textwidth]{figures/3_4_1.pdf}
@@ -712,15 +715,31 @@ XOX
     \caption{Annotation instructions for the RoB 3.4 signalling question.}
     \label{fig:3_4_2}
 \end{figure}
+%
+%
+%
 
 
+
+For annotation instructions for this signalling question, ``RoB 3.4 Is it likely that missingness in the outcome depended on its true value?'' follow the Flowcharts~\ref{fig:3_4_1}~\ref{fig:3_4_2}~\ref{fig:3_4_3}~\ref{fig:3_4_4}.
+To answer this question, the annotator should first find the numbers for missing outcome data in both the intervention and control arms at the specified time point.
+If these numbers are found, check if the percentage of missing outcome data is greater than 5\% between randomization and the analysis time point.
+If the difference exceeds 5\%, mark the corresponding description where these numbers are mentioned and label it as ``3.4 Yes Bad'', and otherwise label it as ``3.4 No Good''.
+Ideally, a randomized controlled trial (RCT) should mention if the difference between the patients randomized and those whose outcomes were analyzed is greater than 5\%.
+If such information is found, mark it.
+If there is no explicit text mentioning this, mark the proportions.
+This information is usually located in the Results section text or possibly in a table. It may also be identified in the flowchart, but the flowchart should be used as a last resort.
+If the numbers regarding missing outcomes data are not found then, go to the Flowchart~\ref{fig:3_4_2}.
+
+%
+%
+%
 \begin{figure}[hbt]
     \centering
     \includegraphics[width=\textwidth]{figures/3_4_3.pdf}
     \caption{Annotation instructions for the RoB 3.4 signalling question.}
     \label{fig:3_4_3}
 \end{figure}
-
 
 \begin{figure}[hbt]
     \centering
@@ -736,6 +755,29 @@ XOX
     \caption{Annotation instructions for the RoB 3.4 signalling question.}
     \label{fig:3_4_5}
 \end{figure}
+%
+%
+%
+
+The Flowchart~\ref{fig:3_4_2} find the reported reasons for missing outcome data, if available, and annotate them.
+If these reasons indicate that missingness in the outcome DOES NOT depend on its true value, follow the "no" route and label the reason as ``3.4 No Good''.
+If the missingness in the outcome DOES depend on its true value then follow the connector route ``yes'' and label the reason with ``3.4 Yes Bad''.
+Again, this information is likely to be found in the Results section text or probably in the table. 
+It can also be identified in the flowchart, but flowchart should be the last resort.
+
+
+Even if the reported reasons for missingness are found, proceed to Flowchart~\ref{fig:3_4_3} and determine if these reported reasons differ between the intervention groups.
+If the reported reasons are different across the intervention groups, mark them and label them as ``3.4 Yes Bad'', and if the reported reasons across the groups are similar then mark them and label with ``3.4 No Good''.
+Next, go to Flowchart 4~\ref{fig:3_4_4} and search for text descriptions related to the outcome that suggest the true value could influence missingness.
+If such text is found, highlight it and label it as ``3.4 Yes Bad''.
+If the text suggests that the true value could not influence missingness, mark it and label it as ``3.4 No Good''.
+Regardless of the label choice, go to the next Flowchart~\ref{fig:3_4_4}.
+The flowchart asks whether any information about switching interventions that led to dropout in the study was found.
+Annotate the text related to missing outcomes, information about switching interventions, and reasons for missing outcomes or dropouts.
+If the missing outcome data due to switching interventions exceeds 5\%, mark the description and follow the "yes" connector, labeling it as ``3.4 Yes Bad''.
+If the missing outcome data due to switching interventions is less than 5\%, mark the description and follow the "no" connector, labeling it as ``3.4 No Good''.
+
+
 %
 %
 %
