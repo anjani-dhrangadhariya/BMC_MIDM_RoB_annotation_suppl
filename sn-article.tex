@@ -698,6 +698,18 @@ This is a theoretical question, the answer to which could be basically obtained 
 %
 The question ``Is it likely that the missingness in the outcome depended on its true value?'' assesses the likelihood of missing outcome data to be related to the actual values of the outcome variable.
 
+
+For annotation instructions for this signalling question, ``RoB 3.4 Is it likely that missingness in the outcome depended on its true value?'' follow the Flowcharts~\ref{fig:3_4_1}~\ref{fig:3_4_2}~\ref{fig:3_4_3}~\ref{fig:3_4_4}.
+To answer this question, the annotator should first find the numbers for missing outcome data in both the intervention and control arms at the specified time point.
+If these numbers are found, check if the percentage of missing outcome data is greater than 5\% between randomization and the analysis time point.
+If the difference exceeds 5\%, mark the corresponding description where these numbers are mentioned and label it as ``3.4 Yes Bad'', and otherwise label it as ``3.4 No Good''.
+Ideally, a randomized controlled trial (RCT) should mention if the difference between the patients randomized and those whose outcomes were analyzed is greater than 5\%.
+If such information is found, mark it.
+If there is no explicit text mentioning this, mark the proportions.
+This information is usually located in the Results section text or possibly in a table. It may also be identified in the flowchart, but the flowchart should be used as a last resort.
+If the numbers regarding missing outcomes data are not found then, go to the Flowchart~\ref{fig:3_4_2}.
+
+
 %
 %
 %
@@ -715,25 +727,8 @@ The question ``Is it likely that the missingness in the outcome depended on its 
     \caption{Annotation instructions for the RoB 3.4 signalling question.}
     \label{fig:3_4_2}
 \end{figure}
-%
-%
-%
 
 
-
-For annotation instructions for this signalling question, ``RoB 3.4 Is it likely that missingness in the outcome depended on its true value?'' follow the Flowcharts~\ref{fig:3_4_1}~\ref{fig:3_4_2}~\ref{fig:3_4_3}~\ref{fig:3_4_4}.
-To answer this question, the annotator should first find the numbers for missing outcome data in both the intervention and control arms at the specified time point.
-If these numbers are found, check if the percentage of missing outcome data is greater than 5\% between randomization and the analysis time point.
-If the difference exceeds 5\%, mark the corresponding description where these numbers are mentioned and label it as ``3.4 Yes Bad'', and otherwise label it as ``3.4 No Good''.
-Ideally, a randomized controlled trial (RCT) should mention if the difference between the patients randomized and those whose outcomes were analyzed is greater than 5\%.
-If such information is found, mark it.
-If there is no explicit text mentioning this, mark the proportions.
-This information is usually located in the Results section text or possibly in a table. It may also be identified in the flowchart, but the flowchart should be used as a last resort.
-If the numbers regarding missing outcomes data are not found then, go to the Flowchart~\ref{fig:3_4_2}.
-
-%
-%
-%
 \begin{figure}[hbt]
     \centering
     \includegraphics[width=\textwidth]{figures/3_4_3.pdf}
@@ -741,7 +736,8 @@ If the numbers regarding missing outcomes data are not found then, go to the Flo
     \label{fig:3_4_3}
 \end{figure}
 
-\begin{figure}[hbt]
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/3_4_4.pdf}
     \caption{Annotation instructions for the RoB 3.4 signalling question.}
@@ -749,7 +745,7 @@ If the numbers regarding missing outcomes data are not found then, go to the Flo
 \end{figure}
 
 
-\begin{figure}[hbt]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/3_4_5.pdf}
     \caption{Annotation instructions for the RoB 3.4 signalling question.}
@@ -778,10 +774,6 @@ If the missing outcome data due to switching interventions exceeds 5\%, mark the
 If the missing outcome data due to switching interventions is less than 5\%, mark the description and follow the "no" connector, labeling it as ``3.4 No Good''.
 
 
-%
-%
-%
-\clearpage
 %
 %
 %
@@ -822,6 +814,7 @@ As per the explanation above, the flowchart requests the annotators to identify 
 If you find information about the validity of the measurement method, mark the sentences that discuss this along with the name of the measurement tool.
 Despite the validity being clarified, assess whether you consider this outcome measurement as appropriate and label the marked sentences as ``4.1 Yes Bad'' if you believe the method was inappropriate or as ``4.1 No Good'' if you believe it was appropriate.
 If there is no information about the validity of the measurement tool/method, mark the name of the outcome measurement and label it as ``4.1 No Information''.
+This information is found in the Methods section of the RCTs.
 %
 %
 %
@@ -829,10 +822,9 @@ If there is no information about the validity of the measurement tool/method, ma
 \label{subsec:4_2}
 %
 The signalling question 4.1 ``Could measurement or ascertainment of the outcome have differed between intervention groups?'' assesses whether outcome measurement methods could have differed between the intervention groups in a study.
-%It aims to evaluate whether there were any systematic differences or biases in how the outcomes were measured or ascertained for the different groups being compared.
 This question examines whether the methods used for outcome measurement were valid, consistent and applied equally to all intervention groups.
 For example, if one group is assessed using a more sensitive or specific measurement tool, it may lead to overestimation or underestimation of treatment effects compared to the other group leading to systematic biases.
-In general, unequal or inconsistent outcome measurement methods between the groups can undermine the internal validity of the study.
+In general, unequal or inconsistent outcome measurement methods between the groups can undermine the internal validity of the study~\cite{enwald2010preventing}. % Nevertheless, the effect of possible biases, such as relying solely on self-reports and on intervention design without a no-information control group, should not be underestimated.
 
 %
 %
@@ -863,6 +855,8 @@ The uniformity in the measurement methods increases the internal validity as wel
 %
 The signalling question 4.3 ``Were outcome assessors aware of the intervention received by the study participants?'' assesses the blinding or masking of outcome assessors in a study.
 If the outcome assessors are unblinded, they may unintentionally or inadvertently favour one one intervention over another based on preconceived notions about the interventions.
+Blinding of outcome assessors is particularly important in studies where subjective outcomes are assessed which is the case in physiotherapy and rehabilitation.
+For instance, a systematic review and meta-analysis on acupuncture for the treatment of peripheral neuropathy highlighted the potential bias introduced if outcome assessors are not blinded to treatment assignment~\cite{dimitrova2017acupuncture}.
 Therefore, blinding the outcome assessors helps minimize the risk of bias and ensures that the assessments are conducted objectively and independently from knowledge of the intervention.
 %- Inadvertently favor one intervention over another
 %- Systematic differences in the outcome measurement (reduces accuracy and comparability)
