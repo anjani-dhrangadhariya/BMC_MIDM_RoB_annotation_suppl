@@ -962,8 +962,9 @@ This ensures transparency and reduces the risk of bias arising from selective re
 %
 The signalling question 5.1, ``Were the data that produced this result analyzed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?'' evaluates whether particular results were analyzed according to a pre-defined analysis plan that was established before the researchers had access to the unblinded outcome data.
 Suppose the analysis plan was established before accessing the unblinded outcome results and was followed correctly after obtaining the results; then it suggests that the analysis was conducted independently of the researcher's knowledge of the outcome, reducing the potential for bias in the interpretation of the data.
-If an analysis plan was established until after accessing the results of the outcome, then some risk of bias could be introduced by knowledge of the results.
-
+If an analysis plan was established until after accessing the results of the outcome, then some risk of bias could be introduced by knowledge of the results~\cite{riiser2022cycling}. % The randomized controlled trials included in the meta-analysis were considered to have a low risk of bias because they had a predefined analysis plan.
+Assessment of this domain requires trial protocol document in addition to the trial itself.
+In our work, one of the annotators manually retrieved and attached the pdf of trial protocol to the clinical trial study.
 %
 %
 %
@@ -978,6 +979,18 @@ If an analysis plan was established until after accessing the results of the out
 %
 
 For annotation instructions for this signalling question, ``RoB 5.1 Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?'' follow the Flowchart~\ref{fig:5_1}.
+In accordance with the explanation above, the first diamond in the flowchart asks the annotators to find the outcomes of interest that were assessed. 
+Next, they are requested to check whether any protocol/registry/statistical analysis plan attached to the trial document.
+If a trial protocol is not found, then the study will be automatically considered as ``5.1 No Information'' for this signalling question.
+If a trial protocol is found, follow to identify the outcome measurements used to assess the outcome(s) of interest.
+Annotate them
+This information should be found in the trial protocol and if not found then the study will be automatically considered as ``5.1 No Information''.
+Are the outcome measures in the clinical trial the same as outcome measures as listed in the trial protocol?
+This information should be found in the methods section of the clinical trial.
+Annotate the information. 
+If the outcome measures as listed in the protocol and the clinical study are same, then label the trial as ``5.1 Yes Good'' and otherwise ``5.1 No Bad''.
+
+
 
 %
 %
