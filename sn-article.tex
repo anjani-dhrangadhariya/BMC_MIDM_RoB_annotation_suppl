@@ -89,10 +89,10 @@
 \maketitle
 
 
-%%%%%%%%%%%%%%%%
-%% Background %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Generic annotation guidelines}
 \label{sec:generic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 This section provides a comprehensive explanation of the structure of instructional placards and the general guidelines for using them effectively.
 The placards serve as a guide for annotators and are structured in a specific way to ensure consistent and accurate annotation of the Risk of Bias (RoB) questions.
@@ -117,8 +117,10 @@ It is important to note that these generic annotation guidelines are supplementa
 %
 %
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Annotation Guidelines for RoB domain 1}
 \label{sec:dom1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 The first risk domain in the RoB 2 tool assists assessment of the ``Bias stemming from the randomization process'' focusing on the three major aspects: 1. random sequence generation, 2. allocation concealment of the enrolled participants, and 3. was the randomized adequately implemented in practice.
 Proper randomization is central to randomized controlled trials and ensures that participants are assigned to intervention groups in an unbiased manner and enables comparison of intervention outcomes across all groups.
@@ -241,8 +243,10 @@ The goal is to capture any relevant information in the full text or table that c
 %
 %
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Annotation Guidelines for RoB domain 2}
 \label{sec:dom2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 The second risk domain in the RoB 2 tool is referred to as ``Bias due to deviations from intended interventions''.
 In RCTs, it is essential to ensure that participants in a study are assigned to the intended interventions accurately and that the interventions are administered as planned.
@@ -569,8 +573,10 @@ However, ensure that the flowchart annotation is your last resort.
 %
 %
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Annotation Guidelines for RoB domain 3}
 \label{sec:dom3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 Domain 3 of the Revised Cochrane Risk of Bias (RoB) 2 tool addresses the potential ``Bias due to missing outcome data'' in a study.
 Bias due to missing outcome data refers to situations where the data for some participants are not available for analysis, and this missingness may be related to the outcomes being measured.
@@ -777,8 +783,10 @@ If the missing outcome data due to switching interventions is less than 5\%, mar
 %
 %
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Annotation Guidelines for RoB domain 4}
 \label{sec:dom4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 The fourth risk domain in the RoB 2 tool is referred to as ``Bias in the measurement of the outcome'' for the outcome of interest.
 This domain aims to evaluate whether there are potential sources of bias in how the outcome is assessed, including issues such as the blinding of outcome assessors and the reliability and validity of outcome measurement methods.
@@ -946,8 +954,10 @@ The information is likely found in the Methods section.
 %
 %
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Annotation Guidelines for RoB domain 5}
 \label{sec:dom5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 Risk domain 5 in RoB 2 tool refers to the ``Bias in the selection of reported results'' domain.
 This domain assesses the risk of bias that may arise from the selective reporting of outcomes or analyses within a study.
@@ -1063,10 +1073,65 @@ If some of these  methods of analysis found in the protocol were omitted in the 
 If some of the methods were missing or some additional methods were conducted for outcomes analysis then label these descriptions as ``5.3 No Bad'' and otherwise ``5.3 Yes Good''.
 This information should be found in the methods section (statistical analysis) of the clinical trial.
 
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Dataset details}
+\label{sec:dataset}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+Include the names of the dataset and their licensing information.
+
+\begin{center}
+ \begin{table*}[hbt!]
+ \centering
+    \begin{tabular}{|l|p{11cm}|}
+    \hline
+    Nr. & Study reference \\
+    \hline
+    1 & Single high-dose buprenorphine for opioid craving during withdrawal~\cite{ahmadi2018single} \\
+    \hline
+    2 & The effect of Kinesio taping on back pain in patients with Lenke Type 1 adolescent idiopathic scoliosis: A randomized controlled trial~\cite{atici2017effect} \\
+    \hline
+    3 & A Randomised Controlled Trial to Evaluate the Administration of the Health Improvement Card as a Health Promotion Tool: A Physiotherapist-Led Community-Based Initiative~\cite{bai2020randomised} \\
+    \hline
+    4 & Evaluation of RESPOND, a patient-centred program to prevent falls in older people presenting to the emergency department with a fall: A randomised controlled trial~\cite{barker2019evaluation} \\
+    \hline
+    5 & Community-based football in men with prostate cancer: 1-year follow-up on a pragmatic, multicentre randomised controlled trial~\cite{bjerre2019community}\\
+    \hline
+    6 & A multifactorial interdisciplinary intervention reduces frailty in older people: randomized trial~\cite{cameron2013multifactorial} \\
+    \hline
+    7 & LThe prevention of musculoskeletal complaints: long-term effect of a work-related psychosocial coaching intervention compared to physiotherapy alone-a randomized controlled trial~\cite{becker2020prevention} \\
+    \hline
+    8 & A single-oral bolus of 100,000 IU of cholecalciferol at hospital admission did not improve outcomes in the COVID-19 disease: the COVID-VIT-D-a randomised multicentre international clinical trial~\cite{cannata2022single} \\
+    \hline
+    9 & Effect of a Nutrition Supplement and Physical Activity Program on Pneumonia and Walking Capacity in Chilean Older People: A Factorial Cluster Randomized Trial~\cite{dangour2011effect} \\
+    \hline
+    10 & The Fear Reduction Exercised Early (FREE) approach to management of low back pain in general practice: A pragmatic cluster-randomised controlled trial~\cite{darlow2019fear} \\
+    \hline
+    \end{tabular}
+      \caption{The table lists the randomized controlled trials included in our pilot annotation corpus.}\label{tab:corpus_studies}
+ \end{table*}   
+\end{center}
+
 
 %
 %
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Prompts for LLM evaluation}
+\label{sec:llms}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+OXO
+
+%
+%
+%
+\clearpage
 %%===========================================================================================%%
 %% If you are submitting to one of the Nature Portfolio journals using the eJP submission   %%
 %% system, please include the references within the manuscript file itself. You may do this  %%
