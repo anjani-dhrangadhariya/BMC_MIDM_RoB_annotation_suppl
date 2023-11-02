@@ -202,14 +202,6 @@ The primary sources for finding information about allocation concealment are the
 For this signalling question, annotate a whole sentence if the whole sentence corresponds to answering this question and annotate a phrase if only a part of the sentence does concern answering the question.
 For example, annotate the whole sentence ``A computer generated random sequence list was generate with two strata and random block size with sizes of two to eight'' because annotating the whole sentence is necessary to answer the question.
 For this next example, annotate only the second part of the sentence, ``A random sequence was generated with a software (stratified for site and with random block sizes), and the allocation was concealed with sealed opaque envelopes.''
-
-
-%Following the above explanation, the first diamond in the flowchart~\ref{fig:1_2} instructs the annotators to identify the method of allocation concealment, and if a proper allocation concealment method is found, but it lacks certain details pertaining to making a judgement, then mark the method and label it with ``1.2 No Information''.
-%For example, ``Sequence was concealed using sealed envelope'' does hint that allocation concealment was in place, but it still lacks the information about whether the envelope was opaque or not.
-%In such case, mark the description with ``1.2 No Information'', otherwise if enough information is provided for making a judgement, mark the description with ``1.2 Yes Good.
-%Good methods of allocation concealment include central randomization, sealed opaque envelopes, and using online randomization tools that offer to securely generate and conceal the allocation sequence.
-%If an improper method of allocation concealment is utilized, then mark the method with ``1.2 No Bad''.
-%On the other hand, the improper methods of allocation concealment include using an open list, a predictable sequence like alternating using the date of birth or other characteristics, and/or using the participant's choice.
 %
 %
 %
@@ -217,10 +209,11 @@ For this next example, annotate only the second part of the sentence, ``A random
 %
 The signalling question ``Did baseline differences between intervention groups suggest a problem with the randomization process?'' of the RoB 2 tool is related to the potential for bias arising from differences in baseline characteristics between intervention groups that are not related to chance and may suggest a problem with the randomization process.
 Even with good randomization, chance imbalances in baseline characteristics can occur leading to an ineffective randomization.
-For example, if the intervention group has significantly more female participants, older participants, or participants with more severe disease at baseline compared to the control group, this may suggest that the randomization process was not effective or that there was a problem with the allocation sequence.
-This can lead to biased estimates of intervention effects and decrease the internal validity of the study.
-So this question addresses whether any differences in baseline characteristics between intervention groups suggest that the randomization process was not effective.
-If there are significant differences in baseline characteristics between intervention groups that are not related to chance, this may suggest that the randomization process was not effective, and the reliability of the study results may be decreased.
+For example, if the treatment group has significantly more female participants, older participants, or participants with more severe disease at baseline compared to the control group, this may suggest that the randomization process was not effective or that there was a problem with the allocation sequence.
+This can lead to biased estimates of treatment effects and decrease the internal validity of the study.
+If there are significant differences in baseline characteristics between intervention groups that are not related to chance, this may suggest that the randomization process was not effective, and the reliability of the study results may be decreased~\cite{roberts1999baseline}.
+
+
 %
 %
 %
@@ -230,15 +223,16 @@ If there are significant differences in baseline characteristics between interve
     \caption{Annotation instructions for the RoB 1.3 signalling question.}
     \label{fig:1_3}
 \end{figure}
+%
+%
+%
 
-%
-%
-%
-Follow the Flowchart~\ref{fig:1_3} for annotation instructions of the signalling question, ``Did baseline differences between intervention groups suggest a problem with the randomization process?''.
+
+Follow the Flowchart~\ref{fig:1_3} for annotation instructions of the SQ, ``Did baseline differences between intervention groups suggest a problem with the randomization process?''.
 The information to assess this question could be found in the table describing the demographic and clinical baseline characteristics of study participants. 
-At this point, the first diamond requests the annotators to mark the full table instead of one or two characteristics, as extracted table text from PDFs lacks the inherent structure necessary for training machine learning models.
+At this point, the first diamond requests the annotators to mark the full table instead of one or two characteristics, as extracted table text from PDFs lack the inherent structure necessary for training machine learning models.
 Therefore, it will be difficult to use the extracted table text to train the machine learning models effectively. 
-If the table for baseline patient characteristics shows excessive similarity or dissimilarity in the baseline characteristics that ARE NOT compatible with chance, then mark the full table and table caption with the label ``1.3 Yes Bad'' otherwise, mark the full table and the table caption with the label ``1.3 No Good''.
+If the table for baseline patient characteristics shows excessive similarity or dissimilarity in the baseline characteristics that ARE NOT compatible with chance, then mark the full table as well as table caption with the label ``1.3 Yes Bad'' otherwise, mark the full table and the table caption with the label ``1.3 No Good''.
 In some cases, this table is missing, but there could be text descriptions that could hint towards baseline differences that could act as confounding factors.
 For instance, consider the following sentence, ``Because baseline ODI differences were a potential confounding factor, an adjusted multiple linear and logistic regression analysis was performed for each continuous and categorical outcome measure...''~\citep{cohen2008randomized}.
 If you find any such information in the full text, mark it with the label ``1.3 No Information''.
@@ -251,14 +245,15 @@ The goal is to capture any relevant information in the full text or table that c
 \label{sec:dom2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-The second risk domain in the RoB 2 tool is referred to as ``Bias due to deviations from intended interventions''.
+The second risk domain in the RoB 2 tool is referred to as ``bias due to deviations from intended interventions''.
 In RCTs, it is essential to ensure that participants in a study are assigned to the intended interventions accurately and that the interventions are administered as planned.
 However, there can be deviations from the intended interventions when participants do not receive the assigned treatment or when they do not adhere to the prescribed regimen.
 This can happen for various reasons, such as non-compliance by participants, crossovers between treatment groups, or missing data due to dropout or loss to follow-up.
+In fact, trials that deviated from the intention to treat analysis showed larger intervention effects~\cite{abraha2015deviation}.
 
 
 NOTE: Before detailing the annotation instructions for signalling questions, we clarify the difference between deviations from intended interventions and dropouts from the trial.
-Deviations from intended interventions are any unintentional changes that could have occurred in the intervention under investigation in the trial.
+Deviations from intended interventions are any unintentional changes that could have occurred in the treatment under investigation in the trial.
 For example, participants may not have complied with the study protocol, or there might have been problems with the delivery of the intervention that could have influenced the study outcomes.
 In contrast, dropouts refer to participants who withdrew from the study or were lost to follow-up.
 Dropouts can potentially introduce bias into a study if the characteristics of the participants who dropped out are different from those who completed the study.
@@ -270,12 +265,12 @@ Although both deviations from the intended intervention and dropout rates can po
 \subsection*{Signalling question - 2.1}
 \label{subsec:2_1}
 %
-The signalling question, ``Were participants aware of their assigned intervention during the trial?'' assess whether the clinical study performed proper blinding or masking of the trial participants.
-Blinding or masking of participants is important to minimize the risk of bias due to participants' knowledge of their assigned intervention.
-When participants are not blinded, they may modify their behaviour, expectations, or reports of outcomes, consciously or unconsciously, based on their knowledge of the assigned intervention, leading to a biased estimate of the treatment effect.
+The SQ 2.1: ``Were participants aware of their assigned intervention during the trial?'' assesses whether the clinical study performed proper blinding or masking of the trial participants.
+Blinding or masking of participants is important to minimize the bias risk due to participants' knowledge of their assigned intervention.
+When participants are not blinded, they could potentially modify their behaviour, expectations, or reports of outcomes, consciously or unconsciously, based on their knowledge of the assigned intervention, leading to a biased estimate of the treatment effect.
 Proper blinding of participants involves concealing the intervention to ensure that the participants do not know which intervention they received~\cite{cedenilla2023psychosocial,swan2003bupropion,o2012rethinking}.
 Proper blinding of participants in physiotherapy and rehabilitation domains is challenging due to the nature of the interventions. 
-In these domains blinding may not be possible in studies because the intervention and control pairs involve a clear difference in the type or frequency of therapy being delivered, such as exercise interventions, behavioural interventions, educational interventions, and mind-body interventions~\cite{andersson2020effect,buttery2023lung}.
+In these domains blinding may not be possible in studies because the treatment and control pairs involve a clear difference in the type or frequency of therapy being delivered, such as exercise interventions, behavioural interventions, educational interventions, and mind-body interventions~\cite{andersson2020effect,buttery2023lung}.
 % Some of good blinding strategies for these domain are listed below.
 %Proper blinding in rehabilitation trials can be challenging, but several methods can be used to minimize the risk of bias due to the knowledge of the assigned intervention by the study participants and therapists.
 %These methods include the use of placebo or sham interventions; for example, in studies of manual therapy, a sham therapy such as light touch or a placebo intervention like ultrasound can be used to blind the participants, and use of standardized interventions, therapist blinding, remote monitoring, and masking techniques.
@@ -304,12 +299,12 @@ In these domains blinding may not be possible in studies because the interventio
 %
 %
 
-Follow the Flowcharts~\ref{fig:2_1} and ~\ref{fig:2_1_1} for annotation instructions of the signalling question, ``Were participants aware of their assigned intervention during the trial?''.
-Following the above explanation, the first diamond in the flowchart asks the annotators to find text descriptions stating that the participants could not distinguish (unaware/blinded) between the assigned interventions: the main intervention and the control intervention.
+Follow the Flowcharts~\ref{fig:2_1} and~\ref{fig:2_1_1} for annotation instructions of the SQ 2.1: ``Were participants aware of their assigned intervention during the trial?''.
+Following the above explanation, the first diamond in the flowchart asks the annotators to find text descriptions stating that the participants could not distinguish (unaware/blinded) between the assigned interventions (the main intervention and the control intervention).
 If such description is found, then annotate it and follow the connector line towards the decision ``yes'', find the sentences that describe intervention and placebo administration and annotate both the descriptions – the first part where intervention administration is described, and the second part where proper participant blinding via a placebo is described.
 Annotate these parts with the label ``2.1 No Good''.
 Both these administration descriptions can be found either in adjacent sentences or far apart in the same or different paragraphs within the same section.
-Annotators are likely to find this information in the Methods section and not in the Results section. 
+Annotators are likely to find this information in the methods section and not in the Results section. 
 If text parts describing the intervention and placebo administration are not found, but there are phrases in the title or abstract indicating that the study is ``placebo-controlled'', ``single-blind'', ``double-blind'', then mark these phrases with the label ``2.1 No Good''.
 
 
@@ -317,14 +312,8 @@ Going back to the first diamond, if the annotators did not find any information 
 If the annotators find that the study is ``open-label'', or found the sentence(s) mentioning that there was no blinding, or participants were aware, or could not be blinded, or something along the lines of the sentences mentioned below, then annotate such sentences with the label ``2.1 Yes Bad''.
 For example, 1) ``Blinding of trial participants and the trial coordinator was not possible due to the nature of the interventions,...'', and 2) ``...we wanted to evaluate the commonly used methods that often involve parents’ actions, and blinding of parents to participants, care providers, or assessors was not possible due to the nature of the intervention.''~\cite{buttery2023lung,andersson2020effect}.
 If the information about the study being ``open-label'' or participants being aware is not found, but the annotator thinks that for the intervention-comparator (IC) pair, it is not possible to achieve blinding using the IC pairs then annotate the phrases/words that give information about IC (names of intervention and comparator) with the label ``2.1 Probably Yes Bad''.
-Blinding information can be found either in the Methods section or the abstract.
-%\begin{enumerate}
-%    \item Due to the nature of the intervention, it was not possible to blind the participants to their assigned group.
-%    \item The physical nature of the intervention made it impossible to blind the participants to their assigned group.
-%    \item Participants were not blinded to their assigned group as the intervention required direct physical contact and feedback from the therapist.
-%    \item Blinding of participants was not possible as the intervention involved active participation from the participants and required visual and physical feedback.
-%    \item The participants were aware of their assigned group, as the nature of the intervention made it difficult to conceal the type of therapy being delivered.
-%\end{enumerate}
+Blinding information can be found either in the methods section or the abstract.
+% List down intervention-comparator pairs where blinding cannot be achieved.
 %
 %
 %
