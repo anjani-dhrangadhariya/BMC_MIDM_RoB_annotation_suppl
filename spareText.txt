@@ -1,0 +1,44 @@
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Dataset details}
+\label{sec:dataset}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+Include the names of the dataset and their licensing information.
+
+\begin{enumerate}
+    \item Single high-dose buprenorphine for opioid craving during withdrawal~\cite{ahmadi2018single}
+    \item The effect of Kinesio taping on back pain in patients with Lenke Type 1 adolescent idiopathic scoliosis: A randomized controlled trial~\cite{atici2017effect}
+    \item A Randomised Controlled Trial to Evaluate the Administration of the Health Improvement Card as a Health Promotion Tool: A Physiotherapist-Led Community-Based Initiative~\cite{bai2020randomised}
+    \item Evaluation of RESPOND, a patient-centred program to prevent falls in older people presenting to the emergency department with a fall: A randomised controlled trial~\cite{barker2019evaluation}
+    \item Community-based football in men with prostate cancer: 1-year follow-up on a pragmatic, multicentre randomised controlled trial~\cite{bjerre2019community}
+    \item A multifactorial interdisciplinary intervention reduces frailty in older people: randomized trial~\cite{cameron2013multifactorial}
+    \item LThe prevention of musculoskeletal complaints: long-term effect of a work-related psychosocial coaching intervention compared to physiotherapy alone-a randomized controlled trial~\cite{becker2020prevention}
+    \item A single-oral bolus of 100,000 IU of cholecalciferol at hospital admission did not improve outcomes in the COVID-19 disease: the COVID-VIT-D-a randomised multicentre international clinical trial~\cite{cannata2022single}
+    \item Effect of a Nutrition Supplement and Physical Activity Program on Pneumonia and Walking Capacity in Chilean Older People: A Factorial Cluster Randomized Trial~\cite{dangour2011effect}
+    \item The Fear Reduction Exercised Early (FREE) approach to management of low back pain in general practice: A pragmatic cluster-randomised controlled trial~\cite{darlow2019fear}
+    \item Aerobic training for improved memory in patients with stress-related exhaustion: a randomized controlled trial~\cite{eskilsson2017aerobic}
+    \item Trunk stabilising exercises promote sternal stability in patients after median sternotomy for heart valve surgery: a randomised trial~\cite{felaya2022trunk}
+    \item Effectiveness of chest physiotherapy in infants hospitalized with acute bronchiolitis: a multicenter, randomized, controlled trial~\cite{gajdos2010effectiveness}
+    \item Long-term survival and dialysis dependency following acute kidney injury in intensive care: extended follow-up of a randomized controlled trial~\cite{gallagher2014long}
+    \item Exercise Training and Weight Gain in Obese Pregnant Women: A Randomized Controlled Trial (ETIP Trial)~\cite{garnaes2016exercise}
+    \item Effects of Hormone Therapy on Cognition and Mood in Recently Postmenopausal Women: Findings from the Randomized, Controlled KEEPS-Cognitive and Affective Study~\cite{gleason2015effects}
+    \item Evaluation of a very brief pedometer-based physical activity intervention delivered in NHS Health Checks in England: The VBI randomised controlled trial~\cite{hardeman2020evaluation}
+    \item Effect of a Primary Care Walking Intervention with and without Nurse Support on Physical Activity Levels in 45- to 75-Year-Olds: The Pedometer And Consultation Evaluation (PACE-UP) Cluster Randomised Clinical Trial~\cite{harris2017effect}
+    \item Digitally enabled aged care and neurological rehabilitation to enhance outcomes with Activity and MObility UsiNg Technology (AMOUNT) in Australia: A randomised controlled trial~\cite{hassett2020digitally}
+    \item MINDflex Training for Cognitive Flexibility in Chronic Pain: A Randomized, Controlled Cross-Over Trial~\cite{jacobsen2020mindflex}
+    \item Effect of bilateral lower limb strengthening exercise on balance and walking in hemiparetic patients after stroke: a randomized controlled trial~\cite{jeon2018effect}
+    \item Switching HIV Treatment in Adults Based on CD4 Count Versus Viral Load Monitoring: A Randomized, Non-Inferiority Trial in Thailand~\cite{jourdain2013switching}
+    \item Effect of 5-Minute Movies Shown via a Mobile Phone App on Risk Factors and Mortality After Stroke in a Low- to Middle-Income Country: Randomized Controlled Trial for the Stroke Caregiver Dyad Education Intervention (Movies4Stroke)~\cite{kamal2020effect}
+    \item Effect of a scaled-up neonatal resuscitation quality improvement package on intrapartum-related mortality in Nepal: a stepped-wedge cluster randomized controlled trial~\cite{kc2019effect}
+    \item The equity impact of brief opportunistic interventions to promote weight loss in primary care: secondary analysis of the BWeL randomised trial~\cite{graham2019equity}
+    \item Effects of preconception lifestyle intervention in infertile women with obesity: The FIT-PLESE randomized controlled trial~\cite{legro2022effects}
+    \item Nilvadipine in mild to moderate Alzheimer disease: A randomised controlled trial~\cite{lawlor2018nilvadipine}
+    \item Effects of acetyl-L-carnitine and methylcobalamin for diabetic peripheral neuropathy: A multicenter, randomized, double-blind, controlled trial~\cite{li2016effects}
+    \item Effect of 24-month physical activity on cognitive frailty and the role of inflammation: the LIFE randomized clinical trial~\cite{liu2018effect}
+    \item Nevirapine-versus lopinavir/ritonavir-based initial therapy for HIV-1 infection among women in Africa: a randomized trial~\cite{lockman2012nevirapine}
+    \item Preventing weight gain in women in rural communities: a cluster randomised controlled trial~\cite{lombard2016preventing}
+\end{enumerate}
