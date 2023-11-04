@@ -320,10 +320,9 @@ Blinding information can be found either in the methods section or the abstract.
 \subsection*{Signalling question - 2.2}
 \label{subsec:2_2}
 %
-While the previous signalling question assessed participant blinding, this question, ``Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?'' evaluates whether the carers and individuals delivering the interventions were aware of the participants' assigned interventions during the trial.
-%Blinding or masking of carers and intervention providers is important to minimize the risk of bias that can arise if they have knowledge of the participants' assigned interventions.
-If carers and treatment administrators are not blinded, their awareness of the assigned interventions may influence their behaviour, interactions with participants, and delivery of the interventions potentially introducing bias and affect the study outcomes~\cite{hrobjartsson2011blinding}.
-
+While the previous signalling question assessed participant blinding, this question, ``Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?'' evaluates whether the carers and individuals administering the interventions were aware of the participants' assigned interventions during the trial.
+If carers and treatment administrators are not blinded, them being aware of the assigned interventions could influence their behaviour, interactions with participants, and delivery of the interventions.
+This can potentially introduce bias and alter the study outcomes~\cite{hrobjartsson2011blinding}.
 
 
 %
@@ -340,14 +339,20 @@ If carers and treatment administrators are not blinded, their awareness of the a
 %
 
 
-Follow the Flowcharts~\ref{fig:2_2} for annotation instructions of the signalling question, ``Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?''.
-Following the above explanation, the first diamond instructs the annotators to find any sentences stating or clearly implying if the carers and administrators could not distinguish between intervention and placebo.
-If no such sentences were found, the label ``2.2 No Information'' will be assumed for this question.
-If such sentences are found, then annotate them and follow the connector line towards the decision ``yes'', then find the sentences that describe intervention and placebo administration and annotate both the descriptions – the first part where intervention administration is described, and the second part where proper participant blinding via a placebo is described.
-Annotate all these parts with the label ``2.1 No Good''.
+Follow the Flowchart~\ref{fig:2_2} for annotation instructions of the signalling question, ``Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?''.
+Following the above explanation, the first diamond instructs the annotators to find sentences describing the administration procedure for intervention under investigation and placebo. 
+If found, annotate both parts of text, the part where intervention administration is described and the part where proper carer and administrator blinding via a placebo or sham is described.
+If you judge the sham as a good sham procedure then label these text parts with ``2.2 No Good''.
 For example, ``This RCT used a 5-week, double-blind, parallel groups design'', ``Treatment was administered by an RA who was blinded to assessment results and study hypotheses''\cite{chiaravalloti2020efficacy}.
+If such sentences are not found, then follow the connector line ``No'' to the next diamond requesting the annotators to look for sentences that mention or clearly imply that the carers and administrators could not distinguish between the intervention or placebo or maybe if the title and abstract of the study was described as ``single blind'', ``double blind'',  or ``placebo-controlled'', then mark such sentences or phrases and label them as ``2.2 No Information''. 
 If no proper carer blinding was described or if it was explicitly mentioned that carer blinding was not possible, then the sentences identified using the first diamond should be marked with the label ``2.2 Yes Bad''.
 For example, ``...we wanted to evaluate the commonly used methods that often involve parents’ actions, and blinding of parents to participants, care providers, or assessors was not possible due to the nature of the intervention''~\cite{andersson2020effect}.
+
+% TODO: Fix this by mixing with above text...
+To provide clearer guidance, please follow Flowchart~\ref{fig:2_2} for annotation instructions related to the signaling question, "Were the carers and people delivering the interventions aware of the participants' assigned intervention during the trial?"
+In the explanation above, the first diamond directs annotators to search for sentences that describe the procedure for administering the intervention under investigation and the placebo. If such sentences are found, the annotators should annotate both parts of the text: the section describing intervention administration and the section explaining how carers and administrators were blinded using a placebo or sham. If the sham is considered a good blinding procedure, label these text portions with "2.2 No Good." For instance, consider the sentences, "This RCT used a 5-week, double-blind, parallel groups design" and "Treatment was administered by an RA who was blinded to assessment results and study hypotheses"~\cite{chiaravalloti2020efficacy}.
+If sentences of this nature are not found, proceed to the connecting line labeled "No" and move to the next diamond. In this diamond, annotators are instructed to search for sentences that either explicitly state or strongly imply that the carers and administrators could not differentiate between the intervention and placebo. Additionally, check if the study's title or abstract mentions terms like "single blind," "double blind," or "placebo-controlled." Mark such sentences or phrases and label them as "2.2 No Information."
+In cases where proper carer blinding was not described or it is explicitly mentioned that carer blinding was not possible, the sentences identified using the first diamond should be marked with the label "2.2 Yes Bad." An example of this is, "...we wanted to evaluate the commonly used methods that often involve parents' actions, and blinding of parents to participants, care providers, or assessors was not possible due to the nature of the intervention"~\cite{andersson2020effect}.
 
 
 
@@ -1068,19 +1073,50 @@ This information should be found in the methods section (statistical analysis) o
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section*{Prompts for LLM evaluation}
-%\label{sec:llms}
+\section*{The Corpus Documents}
+\label{sec:corpus}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%The detailed results of LLM evaluation on 10 of the 60 RCTs are presented in this section.
+Our corpus comprised 40 documents with XX subjective primary outcomes, XX objective outcomes and XX focussing no mortality outcomes.
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Prompts for LLM evaluation}
+\label{sec:llms}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+The list below enumerates the prompts used for LLM evaluation for all the signalling questions.
+
+\begin{enumerate}
+    \item RoB 1.1: Was the allocation sequence random?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 1.2 Was the allocation sequence concealed until participants were enrolled and assigned to interventions? Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 1.3 Did baseline differences between intervention groups suggest a problem with the randomization process?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 2.1: Were participants aware of their assigned intervention during the trial? Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 2.2: Were carers and people delivering the interventions aware of participants' assigned intervention during the trial? Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 2.3: Were there deviations from the intended intervention that arose because of the trial context? Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 2.4 Were these deviations likely to have affected the outcome? Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 2.5: Were these deviations from the intended intervention balanced between groups? Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 2.6: Was an appropriate analysis used to estimate the effect of assignment to intervention? Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 2.7 Was there potential for a substantial impact (on the result) of the failure to analyse participants in the group to which they were randomized?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 3.1 Were data for this outcome available for all, or nearly all, Participants randomized?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 3.2 Is there evidence that the result was not biased by missing outcome data?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 3.3 Could missingness in the outcome depend on its true value?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 3.4 Is it likely that missingness in the outcome depended on its true value?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 4.1 Was the method of measurement of the outcome inappropriate?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 4.2 Could measurement or ascertainment of the outcome have differed between intervention groups?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 4.3 Were outcome assessors aware of the intervention received by study participants?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 4.4 Could the assessment of the outcome have been influenced by knowledge of the intervention received?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 4.5 Is it likely that the assessment of the outcome was influenced by knowledge of the intervention received?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 5.1 Were the data that produced this result analysed in accordance with a pre-specified analysis plan that was finalized before unblinded outcome data were available for analysis?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 5.2 Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements (e.g., scales, definitions, time points) within the outcome domain?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+    \item RoB 5.3 Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
+\end{enumerate}
 
 
 
-%\textbf{Prompt: } Write your prompt here...
-%\newline
-%\textbf{Answer: } Write the answer that ChatPDF gave
-%\newline
-%\textbf{Discussion: } Individual discussion on the reply from ChatPDF
+
+
 %
 %
 %
