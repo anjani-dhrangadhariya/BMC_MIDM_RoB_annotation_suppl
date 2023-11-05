@@ -57,6 +57,8 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
+\usepackage{longtable}
+\usepackage{lipsum} % For generating dummy text
 %\usepackage{biblatex}
 %\addbibresource{sn-bibliography.bib}
 %%%%
@@ -1077,7 +1079,101 @@ This information should be found in the methods section (statistical analysis) o
 \label{sec:corpus}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-Our corpus comprised 40 documents with XX subjective primary outcomes, XX objective outcomes and XX focussing no mortality outcomes.
+Table~\ref{tab1} lists down all the RCTs annotated in this work along with the outcome being assessed for bias risk.
+The corpus comprised 40 documents with XX subjective primary outcomes, XX objective outcomes and XX focusing no mortality outcomes.
+
+\begin{longtable}{|p{3cm}|p{3.5cm}|p{3cm}|p{1.7cm}|}
+\caption{List of RCTs annotated in this project. Bold = The documents marked in bold were the ones used for the manual LLM evaluation. \underline{Underlined} = The documents marked with underline were the doubly-annotated RCTs used for inter-annotator agreement calculation.}\label{tab1}
+\hline
+\textbf{Name} & \textbf{Outcome} & \textbf{Outcome Type} & \textbf{Reference} \\
+\hline
+\endhead % This header will be repeated on each page
+
+% Generating 41 rows of dummy data
+\hline
+\textbf{Hassett 2020} & Upright time & Objective & \cite{hassett2020digitally} \\
+\hline
+Mills 2019 & Very Low Density Lipo Protein & Objective & \cite{mills2019effect} \\
+\hline
+\textbf{Wyke 2019} & Steps per day & Objective & \cite{wyke2019effect} \\
+\hline
+Cameron 2013 & Frailty & Objective & \cite{cameron2013multifactorial} \\
+\hline
+\textbf{Taylor 2016} & Chronic pain grade & Subjective & \cite{taylor2016novel} \\
+\hline
+\textbf{Stuck 2015} & All cause mortality & Mortality & \cite{stuck2015effect} \\
+\hline
+Gallagher 2014 & Mortality & Mortality & \cite{gallagher2014long} \\
+\hline
+Tanaka 2020 & Carotid atherosclerosis & Objective & \cite{tanaka2020febuxostat} \\
+\hline
+Oyama 2016 & Carotid Artery IMT 24 month & Objective & \cite{oyama2016effect} \\
+\hline
+\textbf{Zhang 2020} & Frequency HIV testing & Objective & \cite{zhang2020impact} \\
+\hline
+Moholdt 2012 & Peak oxygen uptake & Objective & \cite{moholdt2012home} \\
+\hline
+Hardeman 2020 & Activity volume & Objective & \cite{hardeman2020evaluation} \\
+\hline
+Garnaes 2016 & Gestational diabetes mellitus & Objective & \cite{garnaes2016exercise} \\
+\hline
+Gajdos 2010 & 8 hour without oxygen & Objective & \cite{gajdos2010effectiveness} \\
+\hline
+Menant 2018 & Dizziness handicap inventory & Subjective & \cite{menant2018reducing} \\
+\hline
+Perlman 2012 & WOMAC total 8 weeks & Subjective & \cite{perlman2012massage} \\
+\hline
+Lawlor 2018 & ADAS Cog12 & Subjective & \cite{lawlor2018nilvadipine} \\
+\hline
+Barker 2019 & Falls per person year & Subjective & \cite{barker2019evaluation} \\
+\hline
+Bjerre 2019 & Quality of life & Subjective & \cite{bjerre2019community} \\
+\hline
+\textbf{Myer 2018} & Infant mortality & Mortality & \cite{myer2018integration} \\
+\hline
+\textbf{Lockman 2012} & Death & Mortality & \cite{lockman2012nevirapine} \\
+\hline
+\underline{Pasha 2013} & Mean perinatal mortality & Mortality & \cite{pasha2013combined} \\
+\hline
+\underline{Darlow 2019} & Roland Morris Disability Questionnaire 6 Months & Subjective & \cite{darlow2019fear} \\
+\hline
+\underline{Legro 2022} & Healthy live birth & Objective & \cite{legro2022effects} \\ %TODO: Isnt it mortality outcome?
+\hline
+\underline{Osteras 2019} & Patient reporting quality of care 6 months & Subjective & \cite{osteraas2019implementing} \\
+\hline
+\underline{Friedli 2020} & Mortality within 120 days & Mortality & \cite{friedli2020refeeding} \\
+\hline
+\underline{Becker 2020} & Restriction muscle strength at 3rd Followup & Objective & \cite{becker2020prevention} \\
+\hline
+Solomons 2020 & VISA A & Subjective & \cite{solomons2020intramuscular} \\
+\hline
+Rossetti 2020 & Risk Ratio Death 6 months & Mortality & \cite{rossetti2020continuous} \\
+\hline
+Roman 2016 & TUG & Objective & \cite{roman2016effects} \\
+\hline
+Raeissadat 2020 & VAS Pain 12month & Subjective & \cite{raeissadat2020platelet} \\
+\hline
+Tagalidou 2019 & Coping Humour Scale & Subjective & \cite{tagalidou2019efficacy} \\
+\hline
+\textbf{Eskilsson 2017} & Burnout T2 & Subjective & \cite{eskilsson2017aerobic} \\
+\hline
+Ahmadi 2018 & Craving Score Day 5 & Subjective & \cite{ahmadi2018single} \\
+\hline
+\underline{Bai 2020} & GAD 7 at 3 months & Subjective & \cite{bai2020randomised} \\
+\hline
+Bierre 2019 & BMD & Objective & \cite{bjerre2019community} \\
+\hline
+\textbf{Thorndike 2014} & Mean steps per day & Objective & \cite{thorndike2014activity} \\
+\hline
+Liu 2018 & SPPB & Subjective & \cite{liu2018effect} \\
+\hline
+Rodrigo-Claverol 2019 & WOMAC Post & Subjective & \cite{rodrigo2019animal} \\
+\hline
+\textbf{Gleason 2015} & 3ms 48 months & Subjective & \cite{gleason2015effects} \\
+\hline
+\underline{An 2020} & VO2peak at 6 months & Objective & \cite{an2020patterns} \\
+\hline
+\end{longtable}
 %
 %
 %
@@ -1112,9 +1208,6 @@ The list below enumerates the prompts used for LLM evaluation for all the signal
     \item RoB 5.2 Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible outcome measurements (e.g., scales, definitions, time points) within the outcome domain?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
     \item RoB 5.3 Is the numerical result being assessed likely to have been selected, on the basis of the results, from multiple eligible analyses of the data?  Provide an answer and extract the supporting sentences that you write your answer based on. Extract the sentences in JSON.
 \end{enumerate}
-
-
-
 
 
 %
