@@ -249,30 +249,30 @@ The goal is to capture any relevant information in the full text or table that c
 %
 The second risk domain in the RoB 2 tool is referred to as ``bias due to deviations from intended interventions''.
 In RCTs, it is essential to ensure that participants in a study are assigned to the intended interventions accurately and that the interventions are administered as planned.
-However, there can be deviations from the intended interventions when participants do not receive the assigned treatment or when they do not adhere to the prescribed regimen.
+However, there can be deviations from the intended interventions when participants do not receive the assigned treatment.
 This can happen for various reasons, such as non-compliance by participants, crossovers between treatment groups, or missing data due to dropout or loss to follow-up.
 In fact, trials that deviated from the intention to treat analysis showed larger intervention effects~\cite{abraha2015deviation}.
 
 
-NOTE: Before detailing the annotation instructions for signalling questions, we clarify the difference between deviations from intended interventions and dropouts from the trial.
+Before detailing the annotation instructions for this domain, we clarify the difference between deviations from intended interventions and dropouts from the trial.
 Deviations from intended interventions are any unintentional changes that could have occurred in the treatment under investigation in the trial.
-For example, participants may not have complied with the study protocol, or there might have been problems with the delivery of the intervention that could have influenced the study outcomes.
+For example, participants may not have complied with the study protocol, or there could have been problems with the delivery of the intervention.
 In contrast, dropouts refer to participants who withdrew from the study or were lost to follow-up.
 Dropouts can potentially introduce bias into a study if the characteristics of the participants who dropped out are different from those who completed the study.
 High dropout rates can also affect the statistical power of the study and its ability to draw valid conclusions.
-Although both deviations from the intended intervention and dropout rates can potentially introduce bias into a study, they are not the same thing and should be evaluated separately when assessing the risk of bias in a study~\cite{imel2013meta,cedenilla2023psychosocial}.
+Although both deviations from the intended intervention and dropout rates can potentially introduce bias into a study, they are not the same thing and should be evaluated separately when assessing in a study~\cite{imel2013meta,cedenilla2023psychosocial}.
 %
 %
 %
 \subsection*{Signalling question - 2.1}
 \label{subsec:2_1}
 %
-The SQ 2.1: ``Were participants aware of their assigned intervention during the trial?'' assesses whether the clinical study performed proper blinding or masking of the trial participants.
+The SQ 2.1, which evaluates whether participants were aware of their assigned intervention during the trial assesses whether the clinical study performed proper blinding or masking of the trial participants.
 Blinding or masking of participants is important to minimize the bias risk due to participants' knowledge of their assigned intervention.
 When participants are not blinded, they could potentially modify their behaviour, expectations, or reports of outcomes, consciously or unconsciously, based on their knowledge of the assigned intervention, leading to a biased estimate of the treatment effect.
 Proper blinding of participants involves concealing the intervention to ensure that the participants do not know which intervention they received~\cite{cedenilla2023psychosocial,swan2003bupropion,o2012rethinking}.
 Proper blinding of participants in physiotherapy and rehabilitation domains is challenging due to the nature of the interventions. 
-In these domains blinding may not be possible in studies because the treatment and control pairs involve a clear difference in the type or frequency of therapy being delivered, such as exercise interventions, behavioural interventions, educational interventions, and mind-body interventions~\cite{andersson2020effect,buttery2023lung}.
+In these domains, participant blinding may not be possible because the treatment and control pairs involve a clear difference in the type, administration or frequency of therapy being delivered, such as exercise interventions, behavioural interventions, educational interventions, and mind-body interventions~\cite{andersson2020effect,buttery2023lung}.
 % Some of good blinding strategies for these domain are listed below.
 %Proper blinding in rehabilitation trials can be challenging, but several methods can be used to minimize the risk of bias due to the knowledge of the assigned intervention by the study participants and therapists.
 %These methods include the use of placebo or sham interventions; for example, in studies of manual therapy, a sham therapy such as light touch or a placebo intervention like ultrasound can be used to blind the participants, and use of standardized interventions, therapist blinding, remote monitoring, and masking techniques.
@@ -287,13 +287,13 @@ In these domains blinding may not be possible in studies because the treatment a
 %
 \begin{figure}[hbt]
     \centering
-    \includegraphics[width=\textwidth]{figures/2_1.png}
+    \includegraphics[width=\textwidth]{figures/2_1_1.pdf}
     \caption{Annotation instructions for the RoB 2.1 signalling question. (part I)}
     \label{fig:2_1}
 \end{figure}
 \begin{figure}[hbt]
     \centering
-    \includegraphics[width=\textwidth]{figures/2_1_1.png}
+    \includegraphics[width=\textwidth]{figures/2_1.pdf}
     \caption{Annotation instructions for the RoB 2.1 signalling question. (part II)}
     \label{fig:2_1_1}
 \end{figure}
@@ -301,13 +301,13 @@ In these domains blinding may not be possible in studies because the treatment a
 %
 %
 
-Follow the Flowcharts~\ref{fig:2_1} and~\ref{fig:2_1_1} for annotation instructions of the SQ 2.1: ``Were participants aware of their assigned intervention during the trial?''.
+Follow the Flowcharts~\ref{fig:2_1} and~\ref{fig:2_1_1} for annotation instructions of the SQ 2.1. %``Were participants aware of their assigned intervention during the trial?''.
 Following the above explanation, the first diamond in the flowchart asks the annotators to find text descriptions stating that the participants could not distinguish (unaware/blinded) between the assigned interventions (the main intervention and the control intervention).
 If such description is found, then annotate it and follow the connector line towards the decision ``yes'', find the sentences that describe intervention and placebo administration and annotate both the descriptions – the first part where intervention administration is described, and the second part where proper participant blinding via a placebo is described.
 Annotate these parts with the label ``2.1 No Good''.
 Both these administration descriptions can be found either in adjacent sentences or far apart in the same or different paragraphs within the same section.
 Annotators are likely to find this information in the methods section and not in the Results section. 
-If text parts describing the intervention and placebo administration are not found, but there are phrases in the title or abstract indicating that the study is ``placebo-controlled'', ``single-blind'', ``double-blind'', then mark these phrases with the label ``2.1 No Good''.
+If text parts describing the intervention and placebo administration are not found, but there are phrases in the title or abstract indicating that the study is ``placebo-controlled'', ``single-blind'', ``double-blind'', then mark these phrases with the label ``2.1 No Information''.
 
 
 Going back to the first diamond, if the annotators did not find any information stating that the participants were unaware of the assigned intervention, they are asked to go to part II of the placard~\ref{fig:2_1_1}.
@@ -1079,13 +1079,15 @@ This information should be found in the methods section (statistical analysis) o
 \label{sec:corpus}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-Table~\ref{tab1} lists down all the RCTs annotated in this work along with the outcome being assessed for bias risk.
-The corpus comprised 41 documents with 17 subjective outcomes, 17 objective outcomes and 7 focusing on mortality outcomes.
+Table~\ref{tab1} lists down all the RCTs in RoBuster along with the outcome being assessed for bias risk.
+The corpus comprised 41 RCTs with 17 subjective outcomes, 17 objective outcomes and 7 focusing on mortality outcomes.
+All these RCT PDFs have CC-BY-0 licences~\footnote{\url{https://creativecommons.org/share-your-work/public-domain/cc0/}}.
 
 \begin{longtable}{|p{4.2cm}|p{5.2cm}|p{1.9cm}|}
-\caption{List of RCTs annotated in this project. Bold = The documents marked in bold were the ones used for the manual LLM evaluation. \underline{Underlined} = The documents marked with underline were the doubly-annotated RCTs used for inter-annotator agreement calculation.}\label{tab1}
+\caption{List of RCTs annotated in this project. \textbf{Bold} = The documents marked in bold were the ones used for the manual LLM evaluation. \underline{Underlined} = The documents marked with underline were the doubly-annotated RCTs used for inter-annotator agreement calculation.}\label{tab1} \\
 \hline
 \textbf{Name} & \textbf{Outcome} & \textbf{Type} \\
+%Name & Outcome & Type \\
 \hline
 \endhead % This header will be repeated on each page
 \hline
@@ -1172,6 +1174,38 @@ Rodrigo-Claverol 2019~\cite{rodrigo2019animal} & WOMAC Post & Subjective \\
 \underline{An 2020}~\cite{an2020patterns} & Peak oxygen uptake (VO2peak) at 6 months & Objective \\
 \hline
 \end{longtable}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Conflict Resolution}
+\label{conflict}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+Post the IAA calculation for the doubly annotated documents (n=9), we conducted a face-to-face conflict resolution session to address every case of conflict.
+Our aim was to use the annotated corpus and resolve the conflicts between the annotators to improve the instructions in the visual placards.
+For multiple conflicting cases, the instructions were either unclear, interpreted differently, or the annotators forgot to annotate.
+However, when the annotators went through the conflicts, they were able to resolve them.
+Three conflict groups were resolved.
+
+\textbf{Disparate regions conflict} was when both the annotators select different parts of text to answer the same SQ using the same response option.
+For example, in~\cite{darlow2019fear} to answer the SQ 2.2, one of the annotators selected the text ``GPs were aware of group allocation (but not intervention content) when they completed their baseline measures'' and another annotators selected the text ``Practices and GPs were necessarily unblinded post randomisation to facilitate planning and delivery of intervention workshops and related data collection.'' and came to the same response option judgment of ``Yes Bad''.
+Even though the annotators were restricted to annotating this SQ in the Methods section of the paper, they selected different parts of the text within the same section leading to this conflict.
+To resolve this conflict, we annotated both the parts of text as consensus annotation in the final version.
+% (\url{https://docs.google.com/spreadsheets/d/14jYqXTcnVzZsC5pbKQ2GcwtVrwl81DG9Yo5uhCJZzjo/edit#gid=1107412538})
+
+
+\textbf{Text span conflict} was when one annotator selected a part of text and another the same text but a longer span.
+For instance, in~\cite{solomons2020intramuscular} to answer the SQ number 4.3, one annotator selected the complete sentence, ``\textsc{The primary outcome for which the study was powered was the change from baseline in 12 week VISA-A (Victorian Institute of Sports Assessment–Achilles),} a valid and reliable disease-specific outcome measure [37] which also includes an activity-related pain scale.'' while the other annotators only selected the text in CAPS. 
+It was easier to resolve this conflict and we selected the longer annotation as the representative and used it as a consensus label.
+It's crucial to emphasize that while both text span conflicts and disparities in the region do not impact $\kappa$, they could result in a lower F1-measure score.
+% (\url{https://docs.google.com/spreadsheets/d/14jYqXTcnVzZsC5pbKQ2GcwtVrwl81DG9Yo5uhCJZzjo/edit#gid=0})
+
+
+\textbf{Polarity conflict} was when the annotators marked same part of text to answer the same SQ in the same document being annotated, but labelled them with polar opposite judgment options (``Yes'' vs. ``No'').
+For instance, in~\cite{solomons2020intramuscular} to answer the SQ 1.2, both the annotators select the text ``Only AS and a research assistant not involved in participant intervention or assessments had access to the random allocation sequence.'' but one labels the text with response judgement ``No Bad'' and another with ``Yes Good''.
+Both annotators agreed that it was a badly formulated sentence in the RCT and agreed to judge the SQ with ``Yes Good'' giving the study authors a benefit of doubt. 
+% (\url{https://docs.google.com/spreadsheets/d/14jYqXTcnVzZsC5pbKQ2GcwtVrwl81DG9Yo5uhCJZzjo/edit#gid=0})
 %
 %
 %
