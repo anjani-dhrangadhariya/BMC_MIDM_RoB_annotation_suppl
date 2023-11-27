@@ -417,9 +417,9 @@ In RCTs, deviations from the planned study protocol may occur for various reason
 These deviations are known as ``protocol deviations''~\cite{folayan2019challenges,merli2020immediate}.
 The question ``Were these deviations likely to have affected the outcome?'' refers to whether the protocol deviations had the potential to influence the study outcomes.
 If the identified deviations (identified using the previous questions) are determined to have a substantial likelihood of affecting the study outcomes, it suggests a higher risk of bias~\cite{dodd2012nonadherence}. 
-Conversely, if the deviations are deemed unlikely to have influenced the outcomes significantly, it indicates a lower risk of bias.
+In contrast, if the deviations are unlikely to have influenced the outcomes significantly, it indicates a lower bias risk.
 Assessing the impact of deviations on the outcomes requires a thorough understanding of the study design, interventions, and potential sources of bias.
-It may involve considering factors such as the timing, frequency, and magnitude of the deviations, as well as their relevance to the study objectives and population under investigation.
+It may involve considering factors such as the timing, frequency, and magnitude of the deviations, as well as their relevance to the study objectives and population under investigation and can ultimately be a subjective judgment.
 %Ultimately, the judgment regarding the influence of deviations on the outcomes is subjective and requires careful interpretation of the available information and expertise in the specific research domain.
 %The aim of this question is to assess the RoB due to the protocol deviations, which may have introduced systematic error or affected the internal validity of the study.
 %If the deviations were unlikely to have affected the study outcome, then this question would be answered with "No."
@@ -428,14 +428,13 @@ It may involve considering factors such as the timing, frequency, and magnitude 
 
 
 
-For annotation instructions for this signalling question, ``Were these deviations likely to have affected the outcome?'' follow the Flowchart~\ref{fig:2_4}.
+For annotation instructions for this signalling question follow the Flowchart~\ref{fig:2_4}.
 Before proceeding with the annotation, ensure that the previous question was not marked as ``2.3 No Good'' (in this case either no deviations were identified or they were not significant).
 If it was, no annotation is required for this question.
 Otherwise, follow the instructions below.
 The first diamond prompts the annotators to identify the reasons for deviations and, if found, they mark it, then follow the connector path of ``yes'' and judge whether these deviations could affect the outcome.
-If the annotated reasons could cause some deviation, then mark them as ``2.4 Yes Bad'' and ``2.4 No Good'' otherwise.
+Using the annotated reasons hypothesize whether these could cause some deviation, then mark them as ``2.4 Yes Bad'' and ``2.4 No Good'' otherwise.
 %For example, ``Due to logistical constraints, three participants in the intervention group did not receive the prescribed medication as per the study protocol.'' could cause high risk of bias.
-%Anjani: (TODO) Could this really cause high risk of bias or is it low risk since only three participants are affected? %Anjani: Give examples for low risk of bias deviations and high risk of bias deviations.
 Annotate full sentences for this question.
 The reasons could be found either in the Results section (main priority) or the Methods section (second priority).
 If the reasons for deviations are not found, then the question is assumed to have ``No Information''.
@@ -458,9 +457,9 @@ If the reasons for deviations are not found, then the question is assumed to hav
 %
 %
 %
-This signalling question 2.5, ``Were these deviations from the intended intervention balanced between groups?'' aims to assess whether any deviations from the intended intervention were similar in frequency and severity across the different study groups (i.e., intervention group and control group) or whether one group had a greater number or severity of deviations than the other.
+This signalling question 2.5, ``Were these deviations from the intended intervention balanced between groups?'' aims to assess whether any deviations from the intended intervention were similar in frequency and severity across the different intervention groups (i.e., intervention group and control group) or whether one group had a greater number or severity of deviations than the other.
 Balanced deviations between groups are important for maintaining the internal validity of the study.
-If one group had a higher number or severity of deviations from the intended intervention than the other, it could potentially introduce bias and confound the results of the study.
+If one group had a higher number (or severity) of deviations from the intended intervention than the other, it could potentially introduce bias and confound the results of the study.
 Therefore, it is important to assess whether deviations from the intended intervention were balanced between the groups when evaluating the risk of bias in an RCT~\cite{rozenfeld2006effect}.
 
 
@@ -1074,7 +1073,7 @@ This information should be found in the methods section (statistical analysis) o
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 Table~\ref{tab1} lists down all the RCTs in RoBuster along with the outcome being assessed for bias risk.
-The corpus comprised 41 RCTs with 17 subjective outcomes, 17 objective outcomes and 7 focusing on mortality outcomes.
+The corpus comprised 41 RCTs with 17 subjective outcomes, 17 objective outcomes and 7 focusing on mortality outcomes, respectively.
 All these RCT PDFs have CC-BY-0 licences~\footnote{\url{https://creativecommons.org/share-your-work/public-domain/cc0/}}.
 
 \begin{longtable}{|p{4.2cm}|p{5.2cm}|p{1.9cm}|}
@@ -1176,11 +1175,12 @@ Rodrigo-Claverol 2019~\cite{rodrigo2019animal} & WOMAC Post & Subjective \\
 \label{conflict}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-Post the IAA calculation for the doubly annotated documents (n=9), we conducted a face-to-face conflict resolution session to address every case of conflict.
-Our aim was to use the annotated corpus and resolve the conflicts between the annotators to improve the instructions in the visual placards.
+Of 41 RCTs in RoBuster, inter-annotator agreement was calculated over nine doubly annotated documents.
+We conducted a face-to-face conflict resolution session to address every case of conflict that occurred in these doubly annotated RCTs.
+Our aim for conflict resolution between the annotators was to improve the instructions in the visual placards.
 For multiple conflicting cases, the instructions were either unclear, interpreted differently, or the annotators forgot to annotate.
 However, when the annotators went through the conflicts, they were able to resolve them.
-Three conflict groups were resolved.
+Three conflict groups were identified and resolved.
 
 \textbf{Disparate regions conflict} was when both the annotators select different parts of text to answer the same SQ using the same response option.
 For example, in~\cite{darlow2019fear} to answer the SQ 2.2, one of the annotators selected the text ``GPs were aware of group allocation (but not intervention content) when they completed their baseline measures'' and another annotators selected the text ``Practices and GPs were necessarily unblinded post randomisation to facilitate planning and delivery of intervention workshops and related data collection.'' and came to the same response option judgment of ``Yes Bad''.
